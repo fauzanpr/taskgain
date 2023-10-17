@@ -1,9 +1,9 @@
 ---
-import Counter from "../components/Counter";
-import Layout from "../layouts/Layout.astro";
+import Counter from "@components/Counter";
+import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<Layout title="about">
+<BaseLayout title="about">
   <Counter client:load />
   <div id="accordion-collapse" data-accordion="collapse" class="w-1/2 mx-auto">
     <h2 id="accordion-collapse-heading-3">
@@ -70,4 +70,4 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </div>
-</Layout>
+</BaseLayout>

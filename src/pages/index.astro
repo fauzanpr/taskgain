@@ -1,9 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Homepage from '@modules/home/Homepage';
 ---
 
-<Layout title="Welcome to Astro.">
-	<div class="bg-gray-800 min-h-screen">
-		<h1 class="text-white text-xl text-center">Hello, Welcome to Astro!</h1>
-	</div>
-</Layout>
+<BaseLayout title="Welcome to Astro.">
+	<Homepage />
+</BaseLayout>
