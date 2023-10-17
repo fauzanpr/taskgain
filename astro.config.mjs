@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import { defineConfig, passthroughImageService } from "astro/config";
+import { passthroughImageService } from "astro/config";
 
 import react from "@astrojs/react";
 
