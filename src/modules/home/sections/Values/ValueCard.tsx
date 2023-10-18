@@ -1,4 +1,4 @@
-import type { IValueSection } from "@interfaces/value-section"
+import type { IValueSection } from "@interfaces/homepage"
 import type { Dispatch, SetStateAction } from "react";
 
 interface IProps extends IValueSection {
