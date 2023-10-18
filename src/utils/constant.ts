@@ -90,3 +90,9 @@ export const faqContent: IFaq[] = [
         description: "How does billing work How does billing work How does billing work How does billing work How does billing work billing work billing work"
     }
 ];
+
+// footer
+export const productFooter: string[] = ["Story Mapping", "Roadmaps", "Priorization", "Insight Management", "Integrations", "Pricing"];
+export const resourcesFooter: string[] = ["Product Roadmap", "Product Management", "Case Studies", "Release Notes", "Blog"];
+export const companyDetailsFooter: string[] = ["About", "Terms of Service", "Privacy Policy", "Status"];
+export const getInTouchFooter: string[] = ["Sign Up Free", "Sign In", "Support", "Contact Us"];

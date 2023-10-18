@@ -1,0 +1,83 @@
+---
+import Container from "@components/Container";
+import Logo from "@assets/Logo.svg";
+import Facebook from "@assets/Facebook.svg";
+import Instagram from "@assets/Instagram.svg";
+import Linkedin from "@assets/Linkedin.svg";
+import Twitter from "@assets/Twitter.svg";
+import { Image } from "astro:assets";
+import {
+  productFooter,
+  companyDetailsFooter,
+  getInTouchFooter,
+  resourcesFooter,
+} from "@utils/constant";
+---
+
+<footer>
+  <Container>
+    <div class="flex py-16 gap-8">
+      <div class="w-2/6 flex flex-col gap-4">
+        <Image src={Logo} alt="Logo Taskgain" width={200} />
+        <p class="text-xl text-gray-400 font-medium leading-8">
+          The #1 way to manage clients, projects and finance
+        </p>
+      </div>
+      <div class="w-1/6 flex flex-col gap-4">
+        <h4 class="font-semibold">Product</h4>
+        {
+          productFooter.map((product) => (
+            <a href="#" class="block text-gray-400">
+              {product}
+            </a>
+          ))
+        }
+      </div>
+      <div class="w-1/6 flex flex-col gap-4">
+        <h4 class="font-semibold">Resources</h4>
+        {
+          resourcesFooter.map((resources) => (
+            <a href="#" class="block text-gray-400">
+              {resources}
+            </a>
+          ))
+        }
+      </div>
+      <div class="w-1/6 flex flex-col gap-4">
+        <h4 class="font-semibold">Company Details</h4>
+        {
+          companyDetailsFooter.map((companyDetails) => (
+            <a href="#" class="block text-gray-400">
+              {companyDetails}
+            </a>
+          ))
+        }
+      </div>
+      <div class="w-1/6 flex flex-col gap-4">
+        <h4 class="font-semibold">Get in Touch</h4>
+        {
+          getInTouchFooter.map((getInTouch) => (
+            <a href="#" class="block text-gray-400">
+              {getInTouch}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </Container>
+  <div class="border-t py-8">
+    <Container>
+      <div class="flex justify-between">
+        <p class="text-gray-400">
+          © 2023 StoriesOnBoard. All Rights reserved
+        </p>
+        <div class="flex">
+            <Image src={Facebook} alt="Facebook logo" />
+            <Image src={Twitter} alt="Facebook logo" />
+            <Image src={Instagram} alt="Instagram logo" />
+            <Image src={Linkedin} alt="Linkedin logo" />
+        </div>
+      </div>
+    </Container>
+  </div>
+</footer>
