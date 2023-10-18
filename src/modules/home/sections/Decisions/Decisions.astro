@@ -3,7 +3,7 @@ import { decisionCard } from "src/utils/constant";
 
 import HeroSection from "@components/Homepage/HeroSection.astro";
 import CardItem from "./CardItem.astro";
-import Button from "./Button";
+import ButtonArrow from "@components/ButtonArrow";
 ---
 
 <section class="flex flex-col gap-16">
@@ -22,5 +22,5 @@ import Button from "./Button";
       ))
     }
   </div>
-  <Button />
+  <div class="w-fit mx-auto"><ButtonArrow text="All Product Features" /></div>
 </section>

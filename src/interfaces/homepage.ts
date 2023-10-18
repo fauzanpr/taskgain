@@ -7,3 +7,9 @@ export interface IValueSection {
 export interface IDecicionCard extends IValueSection {
     imageUrl: ImageMetadata | string;
 }
+
+export interface IFaq {
+    id: number;
+    title: string;
+    description: string;
+}

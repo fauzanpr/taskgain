@@ -1,4 +1,4 @@
-import type { IValueSection, IDecicionCard } from "@interfaces/homepage";
+import type { IValueSection, IDecicionCard, IFaq } from "@interfaces/homepage";
 import IconMap from "@assets/icon-map.svg";
 import IconPrior from "@assets/prior.svg";
 import IconTrack from "@assets/icon-track.svg";
@@ -60,5 +60,33 @@ export const decisionCard: IDecicionCard[] = [
         title: "Roadmaps",
         description: "Easily generate a Release Roadmap or Epic Roadmap from a single story map, or a Portfolio Roadmap from multiple maps. Share these roadmaps with stakeholders for free.",
         imageUrl: IconRoadmap
+    }
+];
+
+export const faqContent: IFaq[] = [
+    {
+        id: 1,
+        title: "Who uses StoriesOnBoard?",
+        description: "Product Owners, Product Managers, Business  Analysts, Developers, UX Designers, and teams in companies of various sizes and industries."
+    },
+    {
+        id: 2,
+        title: "How will this tool upgrade my process?",
+        description: "How will this tool upgrade my process How will this tool upgrade my process How will this tool upgrade my process How will this tool upgrade my process"
+    },
+    {
+        id: 3,
+        title: "Why choose StoriesOnBoard?",
+        description: "Why choose StoriesOnBoard Why choose StoriesOnBoard Why choose StoriesOnBoard Why choose StoriesOnBoard Why choose StoriesOnBoardWhy choose StoriesOnBoard"
+    },
+    {
+        id: 4,
+        title: "Got any tips for newbies?",
+        description: "Got any tips for newbies Got any tips for newbies Got any tips for newbies Got any tips for newbies Got any tips for newbies Got any tips for newbies"
+    },
+    {
+        id: 5,
+        title: "How does billing work?",
+        description: "How does billing work How does billing work How does billing work How does billing work How does billing work billing work billing work"
     }
 ];
