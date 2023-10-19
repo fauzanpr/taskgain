@@ -1,7 +1,6 @@
 import Logo from "@assets/Logo.svg";
 import Container from "@components/Container";
 import Button from "@components/Button";
-import { useState } from "react";
 
 function Header() {
   return (
