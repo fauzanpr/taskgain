@@ -1,6 +1,6 @@
 import type { IFaq } from "@interfaces/homepage";
 import { type Dispatch, type SetStateAction } from "react";
-// import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 interface IProps extends IFaq {
     open: number;
@@ -16,7 +16,7 @@ function Accordion({ id, title, description, open, setOpen }: IProps) {
                     else setOpen(id);
                 }}>
                     <p className="font-semibold">{title}</p>
-                    {/* {open === id ? <IoIosArrowUp /> : <IoIosArrowDown />} */}
+                    {open === id ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </div>
                 <p className={`${open !== id && "hidden"} p-2`}>{description}</p>
             </div>
