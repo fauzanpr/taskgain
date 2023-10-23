@@ -4,7 +4,7 @@ import Button from "@components/Button";
 
 function Header() {
   return (
-    <nav className="bg-white fixed w-full">
+    <nav className="bg-white fixed w-full z-50">
       <Container>
         <div>
           <div className="flex flex-wrap justify-between items-center mx-auto py-4">
