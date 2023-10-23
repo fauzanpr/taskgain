@@ -3,7 +3,11 @@ import Container from "@components/Container";
 import Button from "@components/Button";
 import { headerValue } from "@utils/constant";
 
-function Header() {
+interface IProps {
+  active?: string;
+}
+
+function Header({ active }: IProps) {
   return (
     <nav className="bg-white fixed w-full z-50">
       <Container>
@@ -15,7 +19,7 @@ function Header() {
                 {headerValue.map(headerItem => <li key={headerItem.id}>
                   <a
                     href={headerItem.url}
-                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                    className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ${active === headerItem.label && "text-blue-700"}`}
                   >{headerItem.label}</a>
                 </li>)}
               </ul>
