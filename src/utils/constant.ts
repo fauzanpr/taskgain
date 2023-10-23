@@ -1,10 +1,33 @@
-import type { IValueSection, IDecicionCard, IFaq } from "@interfaces/homepage";
+import type { IValueSection, IDecicionCard, IFaq, IHeader } from "@interfaces/homepage";
 import IconMap from "@assets/icon-map.svg";
 import IconPrior from "@assets/prior.svg";
 import IconTrack from "@assets/icon-track.svg";
 import IconPlanning from "@assets/icon-planning.svg"
 import IconIntegration from "@assets/icon-integration.svg";
 import IconRoadmap from "@assets/icon-roadmap.svg";
+
+export const headerValue: IHeader[] = [
+    {
+        id: 1,
+        label: "Product",
+        url: "/product"
+    },
+    {
+        id: 2,
+        label: "Resources",
+        url: "/resources"
+    },
+    {
+        id: 3,
+        label: "Enterprice",
+        url: "/enterprice"
+    },
+    {
+        id: 4,
+        label: "Pricing",
+        url: "/pricing"
+    }
+];
 
 export const valueConstant: IValueSection[] = [
     {

@@ -1,3 +1,9 @@
+export interface IHeader {
+    id: number;
+    label: string;
+    url: string;
+};
+
 export interface IValueSection {
     id: number,
     title: string;
