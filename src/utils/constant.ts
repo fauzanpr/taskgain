@@ -5,7 +5,7 @@ import IconTrack from "@assets/icon-track.svg";
 import IconPlanning from "@assets/icon-planning.svg"
 import IconIntegration from "@assets/icon-integration.svg";
 import IconRoadmap from "@assets/icon-roadmap.svg";
-import type { IAccordionItem } from "@interfaces/product";
+import type { IAccordionItem, IBenefitItem } from "@interfaces/product";
 
 export const headerValue: IHeader[] = [
     {
@@ -158,4 +158,43 @@ export const benefitValues: IAccordionItem[] = [
         title: "Automated implementation",
         description: "Automated implementation Release planning picture Write user stories easily in the product discovery process using user story maps as visual backlogs."
     },
+];
+
+export const deepDiveItem: IBenefitItem[] = [
+    {
+        id: 1,
+        title: "What is story mapping?",
+        description: "Learn to define the functions and features of your software.",
+        reader: "5 min read"
+    },
+    {
+        id: 2,
+        title: "Start user story mapping",
+        description: "Let's follow these few steps to create a useful story map.",
+        reader: "6 min read"
+    },
+    {
+        id: 3,
+        title: "User Personas detailed",
+        description: "Understand the key needs and goals of the user groups.",
+        reader: "5 min read"
+    },
+    {
+        id: 4,
+        title: "User story examples",
+        description: "Learn how to write user stories effectively.",
+        reader: "5 min read"
+    },
+    {
+        id: 5,
+        title: "Acceptance criteria",
+        description: "Learn how to write acceptance criteria fast & easy.",
+        reader: "5 min read"
+    },
+    {
+        id: 6,
+        title: "AI User Story Writing",
+        description: "Learn user story mapping step by step with AI assistance.",
+        reader: "5 min read"
+    }
 ];
