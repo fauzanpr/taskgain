@@ -5,6 +5,7 @@ import IconTrack from "@assets/icon-track.svg";
 import IconPlanning from "@assets/icon-planning.svg"
 import IconIntegration from "@assets/icon-integration.svg";
 import IconRoadmap from "@assets/icon-roadmap.svg";
+import type { IAccordionItem } from "@interfaces/product";
 
 export const headerValue: IHeader[] = [
     {
@@ -119,3 +120,42 @@ export const productFooter: string[] = ["Story Mapping", "Roadmaps", "Priorizati
 export const resourcesFooter: string[] = ["Product Roadmap", "Product Management", "Case Studies", "Release Notes", "Blog"];
 export const companyDetailsFooter: string[] = ["About", "Terms of Service", "Privacy Policy", "Status"];
 export const getInTouchFooter: string[] = ["Sign Up Free", "Sign In", "Support", "Contact Us"];
+
+// product
+export const benefitValues: IAccordionItem[] = [
+    {
+        id: "01",
+        title: "Facilitate collaboration",
+        description: "You can easily involve stakeholders in the product discovery process using user story maps as visual backlogs."
+    },
+    {
+        id: "02",
+        title: "User-centric planning",
+        description: "User-centric planning in the product discovery process using user story maps as visual backlogs."
+    },
+    {
+        id: "03",
+        title: "Write user stories easily",
+        description: "Write user stories easily in the product discovery process using user story maps as visual backlogs."
+    },
+    {
+        id: "04",
+        title: "Keep track of the big picture",
+        description: "Keep track of the big picture Write user stories easily in the product discovery process using user story maps as visual backlogs."
+    },
+    {
+        id: "05",
+        title: "Backlog prioritization",
+        description: "Backlog prioritization the big picture Write user stories easily in the product discovery process using user story maps as visual backlogs."
+    },
+    {
+        id: "06",
+        title: "Release planning",
+        description: "Release planning picture Write user stories easily in the product discovery process using user story maps as visual backlogs."
+    },
+    {
+        id: "07",
+        title: "Automated implementation",
+        description: "Automated implementation Release planning picture Write user stories easily in the product discovery process using user story maps as visual backlogs."
+    },
+];
