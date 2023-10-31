@@ -198,3 +198,6 @@ export const deepDiveItem: IBenefitItem[] = [
         reader: "5 min read"
     }
 ];
+
+export const ebookFeaturesDataLeft: string[] = ["Discovering project goals", "Mapping the user journey", "Prioritizing user stories"];
+export const ebookFeaturesDataRight: string[] = ["100 user story map examples", "Templates for specs", "Useful articles"];
