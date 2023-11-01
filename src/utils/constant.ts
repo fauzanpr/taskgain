@@ -201,3 +201,60 @@ export const deepDiveItem: IBenefitItem[] = [
 
 export const ebookFeaturesDataLeft: string[] = ["Discovering project goals", "Mapping the user journey", "Prioritizing user stories"];
 export const ebookFeaturesDataRight: string[] = ["100 user story map examples", "Templates for specs", "Useful articles"];
+
+// product
+export const productFaqContentLeft: IFaq[] = [
+    {
+        id: 1,
+        description: "Story mapping is a collaborative and visual technique in which agile teams work together to plan new products or new product features.",
+        title: "What is user story mapping?"
+    },
+    {
+        id: 3,
+        title: "How do you conduct a user story mapping?",
+        description: "How do you conduct a user story mapping of is a collaborative and visual technique in which agile teams work together to plan new products or new product features."
+    },
+    {
+        id: 5,
+        title: "What does a story map consist of?",
+        description: "What does a story map consist of user story consist of is a collaborative and visual technique in which agile teams work together to plan new products or new product features"
+    },
+    {
+        id: 7,
+        title: "What is the story mapping process?",
+        description: "What is the story mapping process is a collaborative and visual technique in which agile teams work together to plan new products or new product features"
+    },
+    {
+        id: 9,
+        title: "What is a user story workshop?",
+        description: "What is a user story workshop a collaborative and visual technique in which agile teams work together to plan new products or new product features"
+    }
+];
+
+export const productFaqContentRight: IFaq[] = [
+    {
+        id: 2,
+        title: "How do you conduct a user story mapping?",
+        description: "How do you conduct a user story mapping Story mapping is a collaborative and visual technique in which agile teams work together to plan new products or new product features."
+    },
+    {
+        id: 4,
+        title: "How to write a good user story?",
+        description: "How to write a good user story consist of is a collaborative and visual technique in which agile teams work together to plan new products or new product features."
+    },
+    {
+        id: 6,
+        title: "What are the acceptance criteria for a user story?",
+        description: "What are the acceptance criteria for a user story user story consist of is a collaborative and visual technique in which agile teams work together to plan new products or new product features"
+    },
+    {
+        id: 8,
+        title: "What can story mapping be used for?",
+        description: "What can story mapping be used for is a collaborative and visual technique in which agile teams work together to plan new products or new product features"
+    },
+    {
+        id: 10,
+        title: "Who should attend a story mapping session?",
+        description: "Who should attend a story mapping session work together to plan new products or new product features"
+    }
+]
