@@ -263,3 +263,6 @@ export const productFaqContentRight: IFaq[] = [
 export const seamlessCollaboration: string[] = ["Organization-wide collaboration made easy", "Gather internal & external stakeholders around the backlog", "Promote transparency, and shared understanding"];
 
 export const permiumServices: string[] = ["Custom security solutions", "Premium support services", "Onboarding and customer training programs"];
+
+// enterprice > transparency
+export const transparencyContent: string[] = ["Personalized team onboarding", "Agile coach network", "Enterprise support SLA", "Advanced license management", "Extended trial period", "Dedicated success manager"];

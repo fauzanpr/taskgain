@@ -1,0 +1,35 @@
+---
+import Button from "@components/Button";
+import ListCheckCircle from "@components/ListCheckCircle.astro";
+import { transparencyContent } from "@utils/constant";
+---
+
+<section class="flex flex-col gap-8">
+  <div class="flex gap-8 items-center">
+    <div class="flex flex-col gap-8 w-1/2 mx-auto">
+      <h2 class="text-3xl font-semibold">
+        Transparency and structure for the entire organization
+      </h2>
+      <p class="text-lg font-normal text-gray-500">
+        How Transparency and Thoughtful Organizational Structure Drive Success
+        Across Your Entire Organization
+      </p>
+      <div class="flex gap-4">
+        <Button text="Get Started" />
+        <Button text="Book Demo" theme="light" />
+      </div>
+    </div>
+    <div class="bg-gray-300 w-1/2 h-96"></div>
+  </div>
+  <div class="grid grid-cols-3 gap-4">
+    {
+      transparencyContent.map((content) => {
+        return (
+          <div class="bg-gray-50 p-4 rounded-full">
+            <ListCheckCircle description={content} />
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
