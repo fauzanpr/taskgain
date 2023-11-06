@@ -1,0 +1,10 @@
+---
+import CheckCircle from "@assets/icon/check-circle.svg";
+import { Image } from "astro:assets";
+const { description } = Astro.props;
+---
+
+<div class="flex gap-2">
+    <Image src={CheckCircle} alt="Check Circle" />
+    <p class="text-gray-400 font-light text-lg">{ description }</p>
+</div>
