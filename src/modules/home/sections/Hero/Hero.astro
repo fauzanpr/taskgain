@@ -1,13 +1,35 @@
-<section class="pt-44">
-  <div class="flex gap-12 items-center mb-16">
-    <h2 class="text-5xl font-semibold w-1/2 leading-[60px]">Start software projects with story mapping</h2>
-    <div>
-        <p class="text-gray-400 text-lg leading-8 mb-8">Effortless Project Coordination, Intuitive Task Tracking, and Enhanced Productivity - All in One Platform</p>
-        <div class="flex gap-2">
-            <input type="email" placeholder="Enter Your Email" class="px-4 py-3 border w-3/4 rounded-full">
-            <button class="bg-gray-400 px-4 py-2 rounded-full text-white w-1/4">Sign up - It's Free</button>
+---
+import Container from "@components/Container";
+import { Image } from "astro:assets";
+import heroImage from "@assets/hero/heroImg.png";
+---
+
+<div class="bg-heroBg">
+  <Container>
+    <section class="pt-48 flex flex-col gap-36">
+      <div class="w-2/3 mx-auto flex flex-col gap-8">
+        <h2
+          class="text-5xl text-white text-center font-semibold leading-[60px]"
+        >
+          Begin projects with Taskgain for better planning
+        </h2>
+        <p class="text-white text-lg leading-8 text-center font-light">
+          Streamline project coordination, simplify task tracking, and boost
+          overall productivity effortlessly through an all-encompassing platform
+          designed for intuitive project management.
+        </p>
+        <div class="flex gap-2 w-2/3 mx-auto">
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            class="px-4 py-3 border w-3/5 rounded-full bg-transparent text-white"
+          />
+          <button class="bg-primary hover:bg-primaryHover px-4 py-2 rounded-full text-white w-2/5"
+            >Sign up - It's Free</button
+          >
         </div>
-    </div>
-  </div>
-  <div class="bg-gray-300 w-full h-96" />
-</section>
+      </div>
+      <Image src={heroImage} alt="Image hero" />
+    </section>
+  </Container>
+</div>

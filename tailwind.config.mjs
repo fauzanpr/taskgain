@@ -5,7 +5,16 @@ export default {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "heroBg": "url('src/assets/hero/HeroBg.svg')"
+      },
+      colors: {
+        primary: "#0095FF",
+        primaryHover: "#0086fc",
+        secondary: "#0095FF"
+      }
+    },
   },
   plugins: [],
 };

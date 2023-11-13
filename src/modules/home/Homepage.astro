@@ -1,5 +1,4 @@
 ---
-import Container from "@components/Container";
 import Hero from "./sections/Hero/Hero.astro";
 import Values from "./sections/Values/Values.astro";
 import BacklogManagement from "./sections/BacklogManagement/BacklogManagement.astro";
@@ -11,10 +10,11 @@ import Footer from "@modules/home/sections/footer/Footer.astro";
 import Trusted from "./sections/Trusted.astro";
 import ReviewPage from "./sections/review/ReviewPage.astro";
 import Header from "./sections/header/Header.astro";
+import ContainerY from "@components/ContainerY";
 ---
 
 <Header />
-<Container>
+<ContainerY>
   <Hero />
   <Trusted />
   <Values />
@@ -23,7 +23,7 @@ import Header from "./sections/header/Header.astro";
   <ReviewPage />
   <Decisions />
   <Faq />
-</Container>
+</ContainerY>
 <div class="mb-48" />
 <Cta />
 <Footer />
