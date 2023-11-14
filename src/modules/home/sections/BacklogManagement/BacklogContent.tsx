@@ -1,4 +1,6 @@
+import ButtonArrow from "@components/ButtonArrow";
 import { useState } from "react";
+import UserStories from "@assets/homepage/backlog/userstories.svg";
 
 const contentsList = [
     {
@@ -27,17 +29,17 @@ function BacklogContent() {
     const [open, setOpen] = useState(1);
     return (
         <>
-            <div className="flex justify-between px-8 py-4 bg-gray-100 rounded-full text-gray-500 font-medium">
-                {contentsList.map(content => <p onClick={() => setOpen(content.id)} className={`hover:bg-gray-600 hover:text-white hover:rounded-full px-4 py-2 cursor-pointer ${content.id === open && "bg-gray-600 rounded-full text-white"}`}>{content.label}</p>)}
+            <div className="flex justify-between px-8 py-4 bg-white rounded-full text-gray-500 font-medium">
+                {contentsList.map(content => <p onClick={() => setOpen(content.id)} className={`text-lg hover:bg-primary hover:text-white hover:rounded-full px-8 py-3 cursor-pointer ${content.id === open && "bg-primary rounded-full text-white"}`}>{content.label}</p>)}
             </div>
 
             <div className={`${open === 1 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-4 w-1/2">
-                    <h3 className="text-2xl font-semibold">
-                        NEW! Save time by writing user stories with AI
+                <div className="flex flex-col gap-8 w-1/2">
+                    <h3 className="text-3xl font-semibold">
+                        <span className="text-primary">NEW!</span> Save time by writing user stories with AI
                     </h3>
                     <div>
-                        <ul className="list-disc list-inside text-gray-500 text-lg">
+                        <ul className="list-disc list-inside text-gray-600 text-lg">
                             <li>
                                 Learn to write user stories, and acceptance criteria in seconds
                             </li>
@@ -45,11 +47,14 @@ function BacklogContent() {
                                 Improve ongoing projects by adding new perspectives and filling the
                                 gaps
                             </li>
+                            <li>Swiftly grasp user story and acceptance criteria writing skills</li>
+                            <li>Elevate ongoing projects by introducing new perspectives, efficiently fill gaps in project understanding</li>
+                            <li>Enhance project clarity through concise user stories</li>
                         </ul>
                     </div>
-                    <button className="bg-gray-500 w-fit py-2 px-4 rounded-full text-white font-normal text-sm">Learn more</button>
+                    <ButtonArrow text="Learn More" />
                 </div>
-                <div className="bg-gray-100 w-1/2 h-96 rounded-xl"></div>
+                <img src={UserStories.src} alt="User Stories Image Descritpion" />
             </div>
 
             <div className={`${open === 2 ? "flex items-center gap-16" : "hidden"}`}>

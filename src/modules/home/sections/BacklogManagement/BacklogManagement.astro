@@ -1,12 +1,17 @@
 ---
 import HeroSection from "@components/Homepage/HeroSection.astro";
 import BacklogContent from "./BacklogContent";
+import Container from "@components/Container";
 ---
 
-<section class="flex flex-col gap-16">
-  <HeroSection
-    title="Simple, clear backlog management"
-    description="StoriesOnBoard: Ideate, prioritize, validate, and collaborate efficiently using story maps, automating feedback for effective decision-making."
-  />
-  <BacklogContent client:load />
+<section class="py-28 bg-gray-50">
+  <Container>
+    <div class="flex flex-col gap-16">
+      <HeroSection
+        title="Simple, clear backlog management"
+        description="StoriesOnBoard: Ideate, prioritize, validate, and collaborate efficiently using story maps, automating feedback for effective decision-making."
+      />
+      <BacklogContent client:load />
+    </div>
+  </Container>
 </section>

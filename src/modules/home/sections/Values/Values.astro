@@ -1,9 +1,17 @@
 ---
 import ValuesList from "./ValuesList";
 import HeroSection from "@components/Homepage/HeroSection.astro";
+import Container from "@components/Container";
 ---
 
-<section class="flex flex-col gap-8">
-  <HeroSection title="Plan, prioritize, and collaborate efficiently" description="Clearly define the project's scope ensuring alignment with stakeholder requirements and expectations, ultimately leading to successful project outcomes." />
-  <ValuesList client:load />
+<section class="py-28">
+  <Container>
+    <div class="flex flex-col gap-8">
+      <HeroSection
+        title="Plan, prioritize, and collaborate efficiently"
+        description="Clearly define the project's scope ensuring alignment with stakeholder requirements and expectations, ultimately leading to successful project outcomes."
+      />
+      <ValuesList client:load />
+    </div>
+  </Container>
 </section>

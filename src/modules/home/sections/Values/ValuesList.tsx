@@ -1,11 +1,12 @@
 import { useState } from "react";
 import ValueCard from "./ValueCard";
 import { valueConstant } from "src/utils/constant";
+import option1 from "src/assets/option1.svg"
 
 const images = [
     {
         id: 1,
-        element: <div className="bg-gray-500 w-1/2" />
+        element: <img src={option1.src} alt="Opsi 1" />
     },
     {
         id: 2,
