@@ -1,4 +1,4 @@
-import type { IValueSection, IDecicionCard, IFaq, IHeader } from "@interfaces/homepage";
+import type { IValueSection, IDecicionCard, IFaq, IHeader, IReview } from "@interfaces/homepage";
 import IconMap from "@assets/icon-map.svg";
 import IconPrior from "@assets/prior.svg";
 import IconTrack from "@assets/icon-track.svg";
@@ -266,3 +266,21 @@ export const permiumServices: string[] = ["Custom security solutions", "Premium 
 
 // enterprice > transparency
 export const transparencyContent: string[] = ["Personalized team onboarding", "Agile coach network", "Enterprise support SLA", "Advanced license management", "Extended trial period", "Dedicated success manager"];
+
+// homepage > faq
+export const homepageReviewContent: IReview[] = [
+    {
+        id: 1,
+        stars: 4,
+        author: "Wouter H.",
+        position: "Chapter Lead",
+        review: "I often have meetings where we bring together a large group of offline and online stakeholders. StoriesOnBoard has helped me structure this meeting while we are brainstorming on product design and the E2E process. The result is easily improved during follow-up meetings or exported to an Excel or pdf and shared within the organization.",
+    }, 
+    {
+        id: 2,
+        stars: 5,
+        author: "Fauzan P.",
+        position: "Manusia Biasa",
+        review: "INI KEREN POL"
+    }
+];

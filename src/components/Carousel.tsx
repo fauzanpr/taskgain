@@ -1,21 +1,20 @@
+import type { IReview } from "@interfaces/homepage";
 import CarouselItem from "./CarouselItem"
 
 interface IProps {
     imagePosition?: "left" | "right";
+    data: IReview[];
 };
 
-function Carousel({ imagePosition = "right" }: IProps) {
+function Carousel({ imagePosition = "right", data }: IProps) {
     if (imagePosition === "right") {
         return (
             <div id="controls-carousel" className="relative w-full" data-carousel="static">
                 {/* <!-- Carousel wrapper --> */}
                 <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <CarouselItem stars={4} author="Wouter H." position="Chapter Lead" review="I often have meetings where we bring together a large group of offline and online stakeholders. StoriesOnBoard has helped me structure this meeting while we are brainstorming on product design and the E2E process. The result is easily improved during follow-up meetings or exported to an Excel or pdf and shared within the organization." imagePosition={imagePosition} />
-                    </div>
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <CarouselItem stars={5} author="Fauzan P." position="Ordinary Human" review="INI KEREN POL" imagePosition={imagePosition} />
-                    </div>
+                    {data.map(d => <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                        <CarouselItem stars={d.stars} author={d.author} position={d.position} review={d.review} imagePosition={imagePosition} />
+                    </div>)}
                 </div>
                 {/* <!-- Slider controls --> */}
                 <div className="flex absolute left-1/3 bottom-4 z-30">

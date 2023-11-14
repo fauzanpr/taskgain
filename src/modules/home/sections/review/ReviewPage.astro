@@ -1,9 +1,18 @@
 ---
 import Carousel from "@components/Carousel";
 import HeroSection from "@components/Homepage/HeroSection.astro";
+import Container from "@components/Container";
+import { homepageReviewContent } from "@utils/constant";
 ---
 
-<section class="flex flex-col gap-16">
-    <HeroSection title="Hear What Our Users Are Saying" description="Here are some testimonials from our user after using Taskplan to manage their Project Management expenses." />
-    <Carousel />
+<section class="bg-white py-28">
+  <Container>
+    <div class="flex flex-col gap-16">
+      <HeroSection
+        title="Hear What Our Users Are Saying"
+        description="Here are some testimonials from our user after using Taskplan to manage their Project Management expenses."
+      />
+      <Carousel data={homepageReviewContent} />
+    </div>
+  </Container>
 </section>

@@ -19,3 +19,11 @@ export interface IFaq {
     title: string;
     description: string;
 }
+
+export interface IReview {
+    id: number;
+    stars: number;
+    author: string;
+    position: string;
+    review: string;
+}
