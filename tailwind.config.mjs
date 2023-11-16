@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         "heroBg": "url('src/assets/hero/HeroBg.svg')",
+        "statsBg": "url('src/assets/homepage/stats/statsBg.svg')",
         "faqBg": "url('src/assets/homepage/faq/faqBg.svg')"
       },
       colors: {
