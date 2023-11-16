@@ -1,17 +1,22 @@
 ---
 import ButtonArrow from "@components/ButtonArrow";
 import FaqList from "@modules/home/sections/faq/FaqList";
+import Container from "@components/Container";
 ---
 
-<section class="flex">
-  <div class="flex flex-col gap-4 items-start w-1/2">
-    <h2 class="text-4xl font-semibold">Frequently asked questions</h2>
-    <p class="text-gray-500">
-      Everything you need to know about the product and billing.
-    </p>
-    <ButtonArrow text="See more FAQ" />
-  </div>
-  <div class="w-1/2">
-    <FaqList client:load />
-  </div>
+<section class="py-28 bg-faqBg bg-cover">
+  <Container>
+    <div class="flex">
+      <div class="flex flex-col gap-4 items-start w-1/2">
+        <h2 class="text-4xl font-semibold">Frequently asked questions</h2>
+        <p class="text-gray-500">
+          Everything you need to know about the product and billing.
+        </p>
+        <ButtonArrow text="See more FAQ" />
+      </div>
+      <div class="w-1/2">
+        <FaqList client:load />
+      </div>
+    </div>
+  </Container>
 </section>

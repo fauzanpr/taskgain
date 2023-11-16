@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "heroBg": "url('src/assets/hero/HeroBg.svg')"
+        "heroBg": "url('src/assets/hero/HeroBg.svg')",
+        "faqBg": "url('src/assets/homepage/faq/faqBg.svg')"
       },
       colors: {
         primary: "#0095FF",
