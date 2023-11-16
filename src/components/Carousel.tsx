@@ -11,7 +11,7 @@ function Carousel({ imagePosition = "right", data }: IProps) {
         return (
             <div id="controls-carousel" className="relative w-full" data-carousel="static">
                 {/* <!-- Carousel wrapper --> */}
-                <div className="relative h-fit overflow-hidden rounded-lg md:h-96">
+                <div className="relative h-fit overflow-hidden rounded-lg md:h-[55vh]">
                     {data.map(d => <div className="hidden duration-700 ease-in-out" data-carousel-item>
                         <CarouselItem stars={d.stars} author={d.author} position={d.position} review={d.review} imagePosition={imagePosition} />
                     </div>)}-

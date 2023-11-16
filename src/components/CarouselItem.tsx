@@ -28,7 +28,7 @@ function CarouselItem({ review, author, position, stars, imagePosition = "right"
         )
     } else if (imagePosition === "right") {
         return (
-            <div className="flex gap-8">
+            <div className="flex gap-8 justify-between">
                 <div className="w-1/2 flex flex-col justify-between">
                     <div className="flex flex-col gap-4">
                         <Star counter={stars} />
