@@ -5,6 +5,7 @@ import Facebook from "@assets/Facebook.svg";
 import Instagram from "@assets/Instagram.svg";
 import Linkedin from "@assets/LinkedIn.svg";
 import Twitter from "@assets/Twitter.svg";
+import logoWhite from "@assets/LogoWhite.svg"
 import { Image } from "astro:assets";
 import {
   productFooter,
@@ -14,17 +15,17 @@ import {
 } from "@utils/constant";
 ---
 
-<footer>
+<footer class="bg-[#0F1821]">
   <Container>
     <div class="flex py-16 gap-8">
       <div class="w-2/6 flex flex-col gap-4">
-        <Image src={Logo} alt="Logo Taskgain" width={200} />
-        <p class="text-xl text-gray-400 font-medium leading-8">
+        <Image src={logoWhite} alt="Logo Taskgain" width={200} />
+        <p class="text-xl text-white font-medium leading-8">
           The #1 way to manage clients, projects and finance
         </p>
       </div>
       <div class="w-1/6 flex flex-col gap-4">
-        <h4 class="font-semibold">Product</h4>
+        <h4 class="font-semibold text-white">Product</h4>
         {
           productFooter.map((product) => (
             <a href="#" class="block text-gray-400">
@@ -34,7 +35,7 @@ import {
         }
       </div>
       <div class="w-1/6 flex flex-col gap-4">
-        <h4 class="font-semibold">Resources</h4>
+        <h4 class="font-semibold text-white">Resources</h4>
         {
           resourcesFooter.map((resources) => (
             <a href="#" class="block text-gray-400">
@@ -44,7 +45,7 @@ import {
         }
       </div>
       <div class="w-1/6 flex flex-col gap-4">
-        <h4 class="font-semibold">Company Details</h4>
+        <h4 class="font-semibold text-white">Company Details</h4>
         {
           companyDetailsFooter.map((companyDetails) => (
             <a href="#" class="block text-gray-400">
@@ -54,7 +55,7 @@ import {
         }
       </div>
       <div class="w-1/6 flex flex-col gap-4">
-        <h4 class="font-semibold">Get in Touch</h4>
+        <h4 class="font-semibold text-white">Get in Touch</h4>
         {
           getInTouchFooter.map((getInTouch) => (
             <a href="#" class="block text-gray-400">
@@ -65,13 +66,13 @@ import {
       </div>
     </div>
   </Container>
-  <div class="border-t py-8">
+  <div class="border-t py-8 border-gray-700">
     <Container>
       <div class="flex justify-between">
         <p class="text-gray-400">
           © 2023 StoriesOnBoard. All Rights reserved
         </p>
-        <div class="flex">
+        <div class="flex gap-2">
             <Image src={Facebook} alt="Facebook logo" />
             <Image src={Twitter} alt="Facebook logo" />
             <Image src={Instagram} alt="Instagram logo" />
