@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 const { imageUrl, title, desc } = Astro.props;
 ---
 
-<div class="flex gap-4 items-start bg-gray-50 p-4">
+<div class="flex gap-4 items-start bg-white shadow-sm p-4">
   <Image src={imageUrl} alt="Ikon map" width={45} />
   <div class="w-full">
     <p class="text-lg font-medium mb-4">{title}</p>

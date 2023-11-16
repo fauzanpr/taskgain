@@ -8,9 +8,14 @@ export interface IValueSection {
     id: number,
     title: string;
     description: string;
+    iconOn: string;
+    iconOff: string;
 };
 
-export interface IDecicionCard extends IValueSection {
+export interface IDecicionCard {
+    id: number,
+    title: string;
+    description: string;
     imageUrl: ImageMetadata | string;
 }
 

@@ -5,12 +5,14 @@ import type { Dispatch, SetStateAction } from "react";
 interface IProps extends IValueSection {
     isActive: boolean;
     setImageActive: Dispatch<SetStateAction<number>>;
+    iconOn: string;
+    iconOff: string;
 };
 
-function ValueCard({ id, title, description, isActive, setImageActive }: IProps) {
+function ValueCard({ id, title, description, isActive, setImageActive, iconOn, iconOff }: IProps) {
     return (
         <div className={`flex items-start gap-4 p-8 border-l-4 hover:border-primary cursor-pointer hover:bg-gray-50 ${isActive ? "bg-gray-50 border-primary" : "border-l-white"}`} onClick={() => setImageActive(id)}>
-            <div className="bg-gray-300 rounded-full w-1/12 text-gray-300 text-center">p</div>
+            { isActive ? <img src={iconOn} alt={title} /> : <img src={iconOff} alt={title} /> }
             <div>
                 <h3 className="text-xl mb-4 font-semibold">{ title }</h3>
                 <p>{ description }</p>

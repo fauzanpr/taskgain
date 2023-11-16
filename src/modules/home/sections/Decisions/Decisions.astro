@@ -4,23 +4,30 @@ import { decisionCard } from "src/utils/constant";
 import HeroSection from "@components/Homepage/HeroSection.astro";
 import CardItem from "./CardItem.astro";
 import ButtonArrow from "@components/ButtonArrow";
+import Container from "@components/Container";
 ---
 
-<section class="flex flex-col gap-16">
-  <HeroSection
-    title="Make decisions with confidence"
-    description="A visual and collaborative environment for teams of all sizes."
-  />
-  <div class="grid grid-cols-3 gap-8">
-    {
-      decisionCard.map((item) => (
-        <CardItem
-          imageUrl={item.imageUrl}
-          title={item.title}
-          desc={item.description}
-        />
-      ))
-    }
-  </div>
-  <div class="w-fit mx-auto"><ButtonArrow text="All Product Features" /></div>
+<section class="bg-gray-50 py-28">
+  <Container>
+    <div class="flex flex-col gap-16">
+      <HeroSection
+        title="Make decisions with confidence"
+        description="A visual and collaborative environment for teams of all sizes."
+      />
+      <div class="grid grid-cols-3 gap-8">
+        {
+          decisionCard.map((item) => (
+            <CardItem
+              imageUrl={item.imageUrl}
+              title={item.title}
+              desc={item.description}
+            />
+          ))
+        }
+      </div>
+      <div class="w-fit mx-auto">
+        <ButtonArrow text="All Product Features" />
+      </div>
+    </div>
+  </Container>
 </section>

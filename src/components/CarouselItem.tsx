@@ -1,4 +1,5 @@
 import Star from "./Star";
+import Review1 from "@assets/homepage/reviews/review-1.svg";
 
 interface IProps {
     review: string;
@@ -38,7 +39,9 @@ function CarouselItem({ review, author, position, stars, imagePosition = "right"
                         <p className="text-gray-400 font-light text-sm">{position}</p>
                     </div>
                 </div>
-                <div className="bg-gray-400 h-96 w-1/2 rounded-xl" />
+                <div className="h-96">
+                    <img src={Review1.src} alt="Gambar Ilustrasi Review 1" />
+                </div>
             </div>
         )
     }
