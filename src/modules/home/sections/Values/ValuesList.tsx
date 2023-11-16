@@ -1,8 +1,9 @@
 import { useState } from "react";
 import ValueCard from "./ValueCard";
 import { valueConstant } from "src/utils/constant";
-import option1 from "src/assets/option1.svg"
-import imgSave from "src/assets/homepage/values/imgSave.svg";
+import option1 from "src/assets/option1.svg";
+import imgEmbrace from "src/assets/homepage/values/imgEmbrace.svg";
+import imgLess from "src/assets/homepage/values/imgLess.svg"
 
 const images = [
     {
@@ -11,11 +12,11 @@ const images = [
     },
     {
         id: 2,
-        element: <img src={imgSave.src} alt="Image Save" />,
+        element: <img src={imgLess.src} alt="Image Save" />,
     },
     {
         id: 3,
-        element: <div className="bg-green-100 w-1/2" />,
+        element: <img src={imgEmbrace.src} alt="Image Save" />,
     }
 ];
 

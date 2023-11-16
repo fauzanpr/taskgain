@@ -11,6 +11,7 @@ import lessOn from "@assets/homepage/values/lessOn.svg";
 import saveOff  from "@assets/homepage/values/saveOff.svg";
 import saveOn from "@assets/homepage/values/saveOn.svg";
 import embraceOff from "@assets/homepage/values/embraceOff.svg";
+import embraceOn from "@assets/homepage/values/embraceOn.svg"
 
 export const headerValue: IHeader[] = [
     {
@@ -55,7 +56,7 @@ export const valueConstant: IValueSection[] = [
         title: "Embrace flexibility, minimize project.",
         description: "Prioritize adaptability by minimizing bureaucratic processes and encouraging flexible timelines, optimizing project efficiency and agility.",
         iconOff: embraceOff.src,
-        iconOn: lessOn.src
+        iconOn: embraceOn.src
     }
 ];
 
