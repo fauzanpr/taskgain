@@ -1,16 +1,15 @@
 ---
+import { Image } from "astro:assets";
 import IconUser from "@assets/icon-user.svg";
 import IconUserPlus from "@assets/icon-user-plus.svg";
-import IconMap from "@assets/homepage/stats/mapicon.svg";
+import IconMap from "@assets/icon-map.svg";
 import Container from "@components/Container";
 import StatsCounter from "./StatsCounter";
 ---
 
 <section class="bg-gray-50 pb-28">
   <Container>
-    <div
-      class="flex flex-col gap-8 bg-statsBg py-12 px-32 rounded-3xl bg-cover"
-    >
+    <div class="flex flex-col gap-8 bg-statsBg py-12 px-32 rounded-3xl bg-cover">
       <h2 class="text-4xl text-center text-white font-semibold">
         Unleash the power of story mapping
       </h2>
@@ -19,29 +18,28 @@ import StatsCounter from "./StatsCounter";
         sticky notes, just a seamless planning process at your fingertips.
       </p>
       <div
-        class="flex justify-between gap-16 bg-transparent py-12 px-32 rounded-2xl"
-        style={{
-          backgroundColor: "rgba(255, 255, 255, .10)",
+        class="flex justify-between gap-16 bg-transparent py-12 px-32 rounded-2xl" style={{
+          "background-color": "rgba(255, 255, 255, .10)"
         }}
       >
         <div class="flex gap-4">
-          <img src={IconUser.src} alt="Ikon User" />
+          <Image src={IconUser} alt="Ikon User" />
           <div>
-            <StatsCounter end={98} client:visible />
+            <p class="text-5xl font-semibold text-white mb-4">98K</p>
             <p class="text-white font-light">Teams</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <img src={IconMap.src} alt="Ikon Map" />
+          <Image src={IconMap} alt="Ikon Map" />
           <div>
-            <StatsCounter end={160} client:visible />
+            <p class="text-5xl font-semibold text-white mb-4">160K</p>
             <p class="text-white font-light">Storymaps</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <img src={IconUserPlus.src} alt="Ikon User" />
+          <Image src={IconUserPlus} alt="Ikon User" />
           <div>
-            <StatsCounter end={200} client:visible />
+            <p class="text-5xl font-semibold text-white mb-4">200K</p>
             <p class="text-white font-light">Satisfied Users</p>
           </div>
         </div>
