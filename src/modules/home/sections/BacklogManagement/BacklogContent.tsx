@@ -1,6 +1,9 @@
 import ButtonArrow from "@components/ButtonArrow";
 import { useState } from "react";
 import UserStories from "@assets/homepage/backlog/userstories.svg";
+import Button from "@components/Button";
+import EmptyImage from "@assets/homepage/backlog/empty.svg";
+import PriorImage from "@assets/homepage/backlog/prior.svg";
 
 const contentsList = [
     {
@@ -35,7 +38,7 @@ function BacklogContent() {
 
             <div className={`${open === 1 ? "flex items-center gap-16" : "hidden"}`}>
                 <div className="flex flex-col gap-8 w-1/2">
-                    <h3 className="text-3xl font-semibold">
+                    <h3 className="text-[40px] font-semibold">
                         <span className="text-primary">NEW!</span> Save time by writing user stories with AI
                     </h3>
                     <div>
@@ -58,12 +61,9 @@ function BacklogContent() {
             </div>
 
             <div className={`${open === 2 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-4 w-1/2">
-                    <h3 className="text-2xl font-semibold">Story map</h3>
+                <div className="flex flex-col gap-8 w-1/2">
+                    <h3 className="text-[40px] font-semibold">The backlog that everybody understands</h3>
                     <div>
-                        <p className="text-lg text-gray-500">
-                            The backlog that everybody understands
-                        </p>
                         <ul className="list-disc list-inside text-gray-500 text-lg">
                             <li>Create user personas</li>
                             <li>Map the user journey</li>
@@ -71,52 +71,46 @@ function BacklogContent() {
                             <li>Invite stakeholders</li>
                         </ul>
                     </div>
-                    <button className="bg-gray-500 w-fit py-2 px-4 rounded-full text-white font-normal text-sm">Learn more</button>
+                    <ButtonArrow text="Learn more" />
                 </div>
-                <div className="bg-gray-100 w-1/2 h-96 rounded-xl"></div>
+                {/* <div className="bg-gray-100 w-1/2 h-96 rounded-xl"></div> */}
+                <img src={EmptyImage.src} alt="Empty image content" />
             </div>
 
             <div className={`${open === 3 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-4 w-1/2">
-                    <h3 className="text-2xl font-semibold">Roadmap</h3>
+                <div className="flex flex-col gap-8 w-1/2">
+                    <h3 className="text-[40px] font-semibold">Share a high-level overview of your product</h3>
                     <div>
-                        <p className="text-lg text-gray-500">
-                            Share a high-level overview of your product
-                        </p>
                         <ul className="list-disc list-inside text-gray-500 text-lg">
                             <li>Share the product vision</li>
                             <li>Track progression</li>
                             <li>Portfolio overview</li>
                         </ul>
                     </div>
-                    <button className="bg-gray-500 w-fit py-2 px-4 rounded-full text-white font-normal text-sm">Learn more</button>
+                    <ButtonArrow text="Learn more" />
                 </div>
-                <div className="bg-gray-100 w-1/2 h-96 rounded-xl"></div>
+                <img src={EmptyImage.src} alt="Empty image content" />
             </div>
 
             <div className={`${open === 4 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-4 w-1/2">
-                    <h3 className="text-2xl font-semibold">Prioritization</h3>
+                <div className="flex flex-col gap-8 w-1/2">
+                    <h3 className="text-[40px] font-semibold">Make product decisions with confidence</h3>
                     <div>
-                        <p className="text-lg text-gray-500">
-                            Make product decisions with confidence
-                        </p>
                         <ul className="list-disc list-inside text-gray-500 text-lg">
                             <li>Standardize prioritization</li>
                             <li>Involve your team</li>
                             <li>Visualize product strategy</li>
                         </ul>
                     </div>
-                    <button className="bg-gray-500 w-fit py-2 px-4 rounded-full text-white font-normal text-sm">Learn more</button>
+                    <Button text="Learn more" />
                 </div>
-                <div className="bg-gray-100 w-1/2 h-96 rounded-xl"></div>
+                <img src={PriorImage.src} alt="Priorization image" />
             </div>
 
             <div className={`${open === 5 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-4 w-1/2">
-                    <h3 className="text-2xl font-semibold">Idea & insight management</h3>
+                <div className="flex flex-col gap-8 w-1/2">
+                    <h3 className="text-[40px] font-semibold">A Central Hub for Brilliant Product Ideas</h3>
                     <div>
-                        <p className="text-lg text-gray-500">A hub for great product ideas</p>
                         <ul className="list-disc list-inside text-gray-500 text-lg">
                             <li>Streamline user feedback</li>
                             <li>Smart feedback processing</li>
@@ -124,9 +118,9 @@ function BacklogContent() {
                             <li>Validate your roadmap</li>
                         </ul>
                     </div>
-                    <button className="bg-gray-500 w-fit py-2 px-4 rounded-full text-white font-normal text-sm">Learn more</button>
+                    <ButtonArrow text="Learn more" />
                 </div>
-                <div className="bg-gray-100 w-1/2 h-96 rounded-xl"></div>
+                <img src={EmptyImage.src} alt="Empty image content" />
             </div>
         </>
     )
