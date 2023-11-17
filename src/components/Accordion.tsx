@@ -20,7 +20,7 @@ function Accordion({ id, title, description, open, setOpen, type }: IProps) {
                     <p className="font-semibold">{title}</p>
                     {open === id ? <img src={ArrowUp.src} alt="panah ke atas" /> : <img src={ArrowDown.src} alt="panah ke bawah" /> }
                 </div>
-                <p className={`${open !== id && "hidden"} p-2`}>{description}</p>
+                <p className={`${open !== id && "hidden"} p-2 pb-8 text-[#667085] font-light`}>{description}</p>
             </div>
         </>
     )

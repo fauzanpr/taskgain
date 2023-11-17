@@ -5,7 +5,7 @@ import Facebook from "@assets/Facebook.svg";
 import Instagram from "@assets/Instagram.svg";
 import Linkedin from "@assets/LinkedIn.svg";
 import Twitter from "@assets/Twitter.svg";
-import logoWhite from "@assets/LogoWhite.svg"
+import logoWhite from "@assets/LogoWhite.svg";
 import { Image } from "astro:assets";
 import {
   productFooter,
@@ -28,7 +28,7 @@ import {
         <h4 class="font-semibold text-white">Product</h4>
         {
           productFooter.map((product) => (
-            <a href="#" class="block text-gray-400">
+            <a href="#" class="block text-gray-400 hover:text-white">
               {product}
             </a>
           ))
@@ -38,7 +38,7 @@ import {
         <h4 class="font-semibold text-white">Resources</h4>
         {
           resourcesFooter.map((resources) => (
-            <a href="#" class="block text-gray-400">
+            <a href="#" class="block text-gray-400 hover:text-white">
               {resources}
             </a>
           ))
@@ -48,7 +48,7 @@ import {
         <h4 class="font-semibold text-white">Company Details</h4>
         {
           companyDetailsFooter.map((companyDetails) => (
-            <a href="#" class="block text-gray-400">
+            <a href="#" class="block text-gray-400 hover:text-white">
               {companyDetails}
             </a>
           ))
@@ -58,7 +58,7 @@ import {
         <h4 class="font-semibold text-white">Get in Touch</h4>
         {
           getInTouchFooter.map((getInTouch) => (
-            <a href="#" class="block text-gray-400">
+            <a href="#" class="block text-gray-400 hover:text-white">
               {getInTouch}
             </a>
           ))
@@ -69,14 +69,20 @@ import {
   <div class="border-t py-8 border-gray-700">
     <Container>
       <div class="flex justify-between">
-        <p class="text-gray-400">
-          © 2023 StoriesOnBoard. All Rights reserved
-        </p>
+        <p class="text-gray-400">© 2023 StoriesOnBoard. All Rights reserved</p>
         <div class="flex gap-2">
+          <a href="#">
             <Image src={Facebook} alt="Facebook logo" />
+          </a>
+          <a href="#">
             <Image src={Twitter} alt="Facebook logo" />
+          </a>
+          <a href="#">
             <Image src={Instagram} alt="Instagram logo" />
+          </a>
+          <a href="#">
             <Image src={Linkedin} alt="Linkedin logo" />
+          </a>
         </div>
       </div>
     </Container>

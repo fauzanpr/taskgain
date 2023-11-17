@@ -6,7 +6,7 @@ interface IProps {
 function Button({ text, theme = "normal" }: IProps) {
     if (theme === "normal") {
         return (
-            <button className="flex gap-4 items-center bg-primary hover:bg-primaryHover text-white text-sm px-8 py-3 w-fit rounded-full">{text}</button>
+            <button className="transition-all flex gap-4 items-center bg-primary hover:bg-primaryHover text-white text-sm px-8 py-3 w-fit rounded-full">{text}</button>
         )
     } else if (theme === "light") {
         return (

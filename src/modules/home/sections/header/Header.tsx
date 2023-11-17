@@ -22,7 +22,7 @@ function Header({ active = "" }: IProps) {;
   window.addEventListener("scroll", changeColor);
 
   return (
-    <nav className={`${ color ? "bg-white" : "bg-transparent" } fixed w-full z-50`}>
+    <nav className={`transition-all ${ color ? "bg-white" : "bg-transparent" } fixed w-full z-50`}>
       <Container>
         <div>
           <div className="flex flex-wrap justify-between items-center mx-auto py-4">
@@ -49,8 +49,8 @@ function Header({ active = "" }: IProps) {;
                 }
               </ul>
             </div>
-            <div className="flex items-center gap-2">
-              <a href="#" className={`border px-6 py-2 rounded-full ${color ? "border-black text-black" : "border-gray-400 text-white"}`}>Login</a>
+            <div className="flex items-center gap-6">
+              <a href="#" className={`transition-all border px-6 py-2 hover:bg-primary hover:border-primary hover:text-white rounded-full ${color ? "border-black text-black" : "border-gray-400 text-white"}`}>Login</a>
               <Button text="Get Started" />
             </div>
           </div>

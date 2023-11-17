@@ -8,7 +8,7 @@ import iconRoadmap from "@assets/homepage/decision/roadmaps.svg";
 import type { IAccordionItem, IBenefitItem } from "@interfaces/product";
 import lessOff from "@assets/homepage/values/lessOff.svg";
 import lessOn from "@assets/homepage/values/lessOn.svg";
-import saveOff  from "@assets/homepage/values/saveOff.svg";
+import saveOff from "@assets/homepage/values/saveOff.svg";
 import saveOn from "@assets/homepage/values/saveOn.svg";
 import embraceOff from "@assets/homepage/values/embraceOff.svg";
 import embraceOn from "@assets/homepage/values/embraceOn.svg"
@@ -287,12 +287,12 @@ export const homepageReviewContent: IReview[] = [
         author: "Wouter H.",
         position: "Chapter Lead",
         review: "I often have meetings where we bring together a large group of offline and online stakeholders. StoriesOnBoard has helped me structure this meeting while we are brainstorming on product design and the E2E process. The result is easily improved during follow-up meetings or exported to an Excel or pdf and shared within the organization.",
-    }, 
+    },
     {
         id: 2,
         stars: 5,
         author: "Fauzan P.",
         position: "Manusia Biasa",
-        review: "INI KEREN POL"
+        review: "Conducting extensive meetings involving a diverse set of offline and online stakeholders used to be a logistical challenge until we discovered StoriesOnBoard. This tool has been instrumental in streamlining our sessions focused on product design and end-to-end processes. Its structured approach has significantly enhanced our brainstorming sessions, allowing for easy improvement during subsequent meetings. Moreover, the ability to export the outcomes seamlessly to Excel or PDF has remarkably facilitated sharing and collaboration within our organization"
     }
 ];
