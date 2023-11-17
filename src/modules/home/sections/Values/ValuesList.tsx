@@ -30,7 +30,7 @@ function ValuesList() {
         return images.find(image => imageActive === image.id);
     };
     return (
-        <div className="flex gap-8">
+        <div className="flex gap-8 items-center">
             { getImageActive()?.element }
             <div className="w-1/2">
                 {valueConstant.map((value) => {
