@@ -2,24 +2,26 @@
 import Button from "@components/Button";
 import EbookFeatureItem from "./EbookFeatureItem.astro";
 import { ebookFeaturesDataLeft, ebookFeaturesDataRight } from "@utils/constant";
+import EbookImg from "@assets/product/ebook/ebookImg.svg";
 import Container from "@components/Container";
+
+import { Image } from "astro:assets";
 ---
 
 <section>
   <Container>
     <div class="flex gap-8 items-center pt-48">
-      <div class="bg-gray-400 w-1/2 h-[500px]"></div>
-      <div class="flex flex-col gap-8 h-fit">
+      <div class="flex flex-col gap-8 h-fit w-1/2">
         <div class="flex flex-col gap-4">
-          <h2 class="text-3xl font-semibold">Free story mapping ebook</h2>
-          <p class="text-lg font-normal text-gray-500">
+          <h2 class="text-5xl font-semibold">Free story mapping ebook</h2>
+          <p class="text-lg font-normal text-gray-400">
             Master the Art of Story Mapping with Our In Depth eBook Your Path to
             Agile Project Excellence
           </p>
         </div>
         <div class="flex justify-between">
           <div class="flex flex-col gap-4">
-            <p class="text-lg">50 handpicked hints on</p>
+            <p class="text-lg text-gray-500">50 handpicked hints on</p>
             {
               ebookFeaturesDataLeft.map((left) => (
                 <EbookFeatureItem description={left} />
@@ -27,7 +29,7 @@ import Container from "@components/Container";
             }
           </div>
           <div class="flex flex-col gap-4">
-            <p class="text-lg">Bonus materials included</p>
+            <p class="text-lg text-gray-500">Bonus materials included</p>
             {
               ebookFeaturesDataRight.map((right) => (
                 <EbookFeatureItem description={right} />
@@ -35,10 +37,9 @@ import Container from "@components/Container";
             }
           </div>
         </div>
-        <div class="flex justify-center">
-          <Button text="Download" />
-        </div>
+        <Button text="Download" />
       </div>
+      <Image src={EbookImg} alt="Ebook Image" />
     </div>
   </Container>
 </section>
