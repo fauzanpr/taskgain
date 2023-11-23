@@ -1,12 +1,29 @@
 ---
 import HeroSection from "@components/Homepage/HeroSection.astro";
-import DeepDiveCard from "./DeepDiveCard.astro";
+import DeepDiveCard from "./DeepDiveCard";
 import { deepDiveItem } from "@utils/constant";
+import Container from "@components/Container";
 ---
 
 <section class="flex flex-col gap-8">
-    <HeroSection title="Take a deep dive into story mapping" description="Story mapping visually organizes product features and user stories, aiding in prioritization and fostering a user-centric approach to development." />
-    <div class="grid gap-8 grid-cols-3">
-        { deepDiveItem.map(item => <DeepDiveCard title={item.title} description={item.description} reader={item.reader} />) }
+  <Container>
+    <div class="flex flex-col gap-8 pt-48">
+      <HeroSection
+        title="Take a deep dive into story mapping"
+        description="Story mapping visually organizes product features and user stories, aiding in prioritization and fostering a user-centric approach to development."
+      />
+      <div class="grid gap-8 grid-cols-3">
+        {
+          deepDiveItem.map((item) => (
+            <DeepDiveCard
+              title={item.title}
+              description={item.description}
+              reader={item.reader}
+              color={item.color}
+            />
+          ))
+        }
+      </div>
     </div>
+  </Container>
 </section>

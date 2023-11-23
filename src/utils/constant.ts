@@ -177,37 +177,43 @@ export const deepDiveItem: IBenefitItem[] = [
         id: 1,
         title: "What is story mapping?",
         description: "Learn to define the functions and features of your software.",
-        reader: "5 min read"
+        reader: "5 min read",
+        color: "blue"
     },
     {
         id: 2,
         title: "Start user story mapping",
         description: "Let's follow these few steps to create a useful story map.",
-        reader: "6 min read"
+        reader: "6 min read",
+        color: "green"
     },
     {
         id: 3,
         title: "User Personas detailed",
         description: "Understand the key needs and goals of the user groups.",
-        reader: "5 min read"
+        reader: "5 min read",
+        color: "yellow"
     },
     {
         id: 4,
         title: "User story examples",
         description: "Learn how to write user stories effectively.",
-        reader: "5 min read"
+        reader: "5 min read",
+        color: "red"
     },
     {
         id: 5,
         title: "Acceptance criteria",
         description: "Learn how to write acceptance criteria fast & easy.",
-        reader: "5 min read"
+        reader: "5 min read",
+        color: "blue"
     },
     {
         id: 6,
         title: "AI User Story Writing",
         description: "Learn user story mapping step by step with AI assistance.",
-        reader: "5 min read"
+        reader: "5 min read",
+        color: "green"
     }
 ];
 

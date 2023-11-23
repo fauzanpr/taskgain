@@ -6,4 +6,5 @@ export interface IAccordionItem {
 
 export interface IBenefitItem extends IAccordionItem {
     reader: string;
+    color: string;
 }
