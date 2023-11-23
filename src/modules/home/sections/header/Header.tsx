@@ -2,14 +2,17 @@ import Logo from "@assets/Logo.svg";
 import LogoWhite from "@assets/LogoWhite.svg"
 import Container from "@components/Container";
 import Button from "@components/Button";
+import LogoBlue from "@assets/LogoBlue.svg";
 import { headerValue } from "@utils/constant";
 import { useState } from "react";
 
 interface IProps {
   active?: string;
+  type?: "normal" | "blue";
 }
 
-function Header({ active = "" }: IProps) {;
+function Header({ active = "", type = "normal" }: IProps) {
+  ;
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 90) {
@@ -22,11 +25,11 @@ function Header({ active = "" }: IProps) {;
   window.addEventListener("scroll", changeColor);
 
   return (
-    <nav className={`transition-all ${ color ? "bg-white" : "bg-transparent" } fixed w-full z-50`}>
+    <nav className={`transition-all ${color ? "bg-white" : "bg-transparent"} fixed w-full z-50`}>
       <Container>
         <div>
           <div className="flex flex-wrap justify-between items-center mx-auto py-4">
-            { color ? <img src={Logo.src} alt="Logo taskgain" width={150} /> : <img src={LogoWhite.src} alt="Logo taskgain" width={150} /> }
+            {color ? (type === "blue" ? <img src={LogoBlue.src} alt="Logo taskgain" width={250} /> : <img src={Logo.src} alt="Logo taskgain" width={150} />) : (type === "blue" ? <img src={LogoBlue.src} alt="Logo taskgain" width={250} /> : <img src={LogoWhite.src} alt="Logo taskgain" width={150} />)}
             <div
               id="mega-menu-full"
               className="items-center justify-between font-medium hidden w-full md:flex md:w-auto"
@@ -40,7 +43,7 @@ function Header({ active = "" }: IProps) {;
                       <a
                         href={headerItem.url}
                         className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover ${active === headerItem.label && "text-blue-700"
-                          } ${ color ? "text-gray-900" : "text-white" }`}
+                          } ${color ? "text-gray-900" : (type === "blue" ? "text-gray-900" : "text-white")}`}
                       >
                         {headerItem.label}
                       </a>
@@ -50,7 +53,7 @@ function Header({ active = "" }: IProps) {;
               </ul>
             </div>
             <div className="flex items-center gap-6">
-              <a href="#" className={`transition-all border px-6 py-2 hover:bg-primary hover:border-primary hover:text-white rounded-full ${color ? "border-black text-black" : "border-gray-400 text-white"}`}>Login</a>
+              <a href="#" className={`transition-all border px-6 py-2 hover:bg-primary hover:border-primary hover:text-white rounded-full ${color ? "border-gray-400 text-black" : (type === "blue" ? "border-gray-400 text-gray-900" : "border-gray-400 text-white")}`}>Login</a>
               <Button text="Get Started" />
             </div>
           </div>
