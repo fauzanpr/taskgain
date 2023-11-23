@@ -1,5 +1,5 @@
 ---
-import Header from "@modules/home/sections/header/Header.astro";
+import Header from "@modules/home/sections/header/Header";
 import Container from "@components/Container";
 import Hero from "@modules/products/sections/Hero.astro";
 import Trusted from "@modules/home/sections/Trusted.astro";
@@ -11,15 +11,13 @@ import Footer from "@modules/home/sections/footer/Footer.astro";
 import Faq from "./sections/faq/Faq.astro";
 ---
 
-<Header active="Product" />
-<Container>
-  <Hero />
-  <Trusted />
-  <Benefits />
-  <DeepDive />
-  <Faq />
-  <Ebook />
-</Container>
+<Header client:only />
+<Hero />
+<Trusted />
+<Benefits />
+<DeepDive />
+<Faq />
+<Ebook />
 <div class="mb-48"></div>
 <Cta />
 <Footer />

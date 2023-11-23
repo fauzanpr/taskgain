@@ -1,11 +1,21 @@
 ---
+import Container from "@components/Container";
 import BenefitsList from "./BenefitsList";
+import BenefitsImg from "@assets/product/benefits/benefitsImg.svg";
+
+import { Image } from "astro:assets";
 ---
 
-<section class="flex gap-8">
-    <div class="bg-gray-400 w-1/2 h-[700px]" />
-    <div class="w-1/2 flex flex-col gap-8">
-        <h2 class="text-5xl font-medium leading-24">7 benefits of user story maps</h2>
+<section>
+  <Container>
+    <div class="flex gap-16 py-48">
+      <Image src={BenefitsImg} alt="Benefit Image" />
+      <div class="w-1/2 flex flex-col gap-8">
+        <h2 class="text-5xl font-medium leading-[57.4px]">
+          7 benefits of user <br /> story maps
+        </h2>
         <BenefitsList client:load />
+      </div>
     </div>
+  </Container>
 </section>
