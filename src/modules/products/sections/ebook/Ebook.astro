@@ -1,40 +1,44 @@
 ---
 import Button from "@components/Button";
 import EbookFeatureItem from "./EbookFeatureItem.astro";
-import HeroSection from "@components/Homepage/HeroSection.astro";
 import { ebookFeaturesDataLeft, ebookFeaturesDataRight } from "@utils/constant";
+import Container from "@components/Container";
 ---
 
-<section class="flex gap-8 items-center">
-  <div class="bg-gray-400 w-1/2 h-[500px]"></div>
-  <div class="flex flex-col gap-8 h-fit">
-    <div class="flex flex-col gap-4">
-      <h2 class="text-3xl font-semibold">Free story mapping ebook</h2>
-      <p class="text-lg font-normal text-gray-500">
-        Master the Art of Story Mapping with Our In Depth eBook Your Path to
-        Agile Project Excellence
-      </p>
-    </div>
-    <div class="flex justify-between">
-      <div class="flex flex-col gap-4">
-        <p class="text-lg">50 handpicked hints on</p>
-        {
-          ebookFeaturesDataLeft.map((left) => (
-            <EbookFeatureItem description={left} />
-          ))
-        }
+<section>
+  <Container>
+    <div class="flex gap-8 items-center pt-48">
+      <div class="bg-gray-400 w-1/2 h-[500px]"></div>
+      <div class="flex flex-col gap-8 h-fit">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-3xl font-semibold">Free story mapping ebook</h2>
+          <p class="text-lg font-normal text-gray-500">
+            Master the Art of Story Mapping with Our In Depth eBook Your Path to
+            Agile Project Excellence
+          </p>
+        </div>
+        <div class="flex justify-between">
+          <div class="flex flex-col gap-4">
+            <p class="text-lg">50 handpicked hints on</p>
+            {
+              ebookFeaturesDataLeft.map((left) => (
+                <EbookFeatureItem description={left} />
+              ))
+            }
+          </div>
+          <div class="flex flex-col gap-4">
+            <p class="text-lg">Bonus materials included</p>
+            {
+              ebookFeaturesDataRight.map((right) => (
+                <EbookFeatureItem description={right} />
+              ))
+            }
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <Button text="Download" />
+        </div>
       </div>
-      <div class="flex flex-col gap-4">
-        <p class="text-lg">Bonus materials included</p>
-        {
-          ebookFeaturesDataRight.map((right) => (
-            <EbookFeatureItem description={right} />
-          ))
-        }
-      </div>
     </div>
-    <div class="flex justify-center">
-      <Button text="Download" />
-    </div>
-  </div>
+  </Container>
 </section>
