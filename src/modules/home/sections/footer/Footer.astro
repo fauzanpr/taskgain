@@ -1,9 +1,13 @@
 ---
 import Container from "@components/Container";
-import Facebook from "@assets/Facebook.svg";
-import Instagram from "@assets/Instagram.svg";
-import Linkedin from "@assets/LinkedIn.svg";
-import Twitter from "@assets/Twitter.svg";
+// import Facebook from "@assets/Facebook.svg";
+import Facebook from "@assets/icon/fb-vector.svg";
+// import Instagram from "@assets/Instagram.svg";
+import Instagram from "@assets/icon/ig-vector.svg";
+// import Linkedin from "@assets/LinkedIn.svg";
+import Linkedin from "@assets/icon/linkedin-vector.svg";
+// import Twitter from "@assets/Twitter.svg";
+import Twitter from "@assets/icon/tweet-vector.svg";
 import logoWhite from "@assets/LogoWhite.svg";
 import { Image } from "astro:assets";
 import {
@@ -70,16 +74,28 @@ import {
       <div class="flex justify-between">
         <p class="text-gray-400">© 2023 StoriesOnBoard. All Rights reserved</p>
         <div class="flex gap-2">
-          <a href="#">
+          <a
+            href="#"
+            class="transition-all bg-gray-700 rounded-full flex justify-center items-center hover:bg-primaryHover h-10 w-10"
+          >
             <Image src={Facebook} alt="Facebook logo" />
           </a>
-          <a href="#">
-            <Image src={Twitter} alt="Facebook logo" />
+          <a
+            href="#"
+            class="bg-gray-700 h-10 w-10 rounded-full flex justify-center items-center hover:bg-primaryHover transition-all"
+          >
+            <Image src={Twitter} alt="Twitter Logo" />
           </a>
-          <a href="#">
+          <a
+            href="#"
+            class="bg-gray-700 h-10 w-10 rounded-full flex justify-center items-center hover:bg-primaryHover transition-all"
+          >
             <Image src={Instagram} alt="Instagram logo" />
           </a>
-          <a href="#">
+          <a
+            href="#"
+            class="bg-gray-700 h-10 w-10 rounded-full flex justify-center items-center hover:bg-primaryHover transition-all"
+          >
             <Image src={Linkedin} alt="Linkedin logo" />
           </a>
         </div>

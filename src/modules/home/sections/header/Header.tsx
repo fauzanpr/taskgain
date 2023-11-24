@@ -11,7 +11,7 @@ interface IProps {
   type?: "normal" | "blue";
 }
 
-function Header({ active = "", type = "normal" }: IProps) {
+function Header({ active, type = "normal" }: IProps) {
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 90) {
@@ -28,7 +28,9 @@ function Header({ active = "", type = "normal" }: IProps) {
       <Container>
         <div>
           <div className="flex flex-wrap justify-between items-center mx-auto py-4">
-            {color ? (type === "blue" ? <img src={LogoBlue.src} alt="Logo taskgain" width={250} /> : <img src={Logo.src} alt="Logo taskgain" width={150} />) : (type === "blue" ? <img src={LogoBlue.src} alt="Logo taskgain" width={250} /> : <img src={LogoWhite.src} alt="Logo taskgain" width={150} />)}
+            {color ? (type === "blue" ? <a href="/">
+              <img src={LogoBlue.src} alt="Logo taskgain" width={250} />
+            </a> : <a href="/"><img src={Logo.src} alt="Logo taskgain" width={150} /></a>) : (type === "blue" ? <a href="/"><img src={LogoBlue.src} alt="Logo taskgain" width={250} /></a> : <a href="/"><img src={LogoWhite.src} alt="Logo taskgain" width={150} /></a>)}
             <div
               id="mega-menu-full"
               className="items-center justify-between font-medium hidden w-full md:flex md:w-auto"
@@ -41,7 +43,7 @@ function Header({ active = "", type = "normal" }: IProps) {
                     <li>
                       <a
                         href={headerItem.url}
-                        className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover ${active === headerItem.label && "text-blue-700"
+                        className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover ${headerItem.label === active && "text-blue-700"
                           } ${color ? "text-gray-900" : (type === "blue" ? "text-gray-900" : "text-white")}`}
                       >
                         {headerItem.label}
