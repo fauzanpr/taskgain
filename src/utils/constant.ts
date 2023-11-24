@@ -5,7 +5,7 @@ import iconTrack from "@assets/homepage/decision/track.svg";
 import iconRelease from "@assets/homepage/decision/release.svg";
 import iconIntegration from "@assets/homepage/decision/integration.svg";
 import iconRoadmap from "@assets/homepage/decision/roadmaps.svg";
-import type { IAccordionItem, IBenefitItem } from "@interfaces/product";
+import type { IAccordionItem, IBenefitItem, IIntegratedCard } from "@interfaces/product";
 import lessOff from "@assets/homepage/values/lessOff.svg";
 import lessOn from "@assets/homepage/values/lessOn.svg";
 import saveOff from "@assets/homepage/values/saveOff.svg";
@@ -301,4 +301,84 @@ export const homepageReviewContent: IReview[] = [
         position: "Manusia Biasa",
         review: "Conducting extensive meetings involving a diverse set of offline and online stakeholders used to be a logistical challenge until we discovered StoriesOnBoard. This tool has been instrumental in streamlining our sessions focused on product design and end-to-end processes. Its structured approach has significantly enhanced our brainstorming sessions, allowing for easy improvement during subsequent meetings. Moreover, the ability to export the outcomes seamlessly to Excel or PDF has remarkably facilitated sharing and collaboration within our organization"
     }
+];
+
+// product > integrated
+import SlackImg from "@assets/product/integrated/slackImg.svg";
+import MiroImg from "@assets/product/integrated/Miro.svg";
+import SketchImg from "@assets/product/integrated/Sketch.svg";
+import FigmaImg from "@assets/product/integrated/Figma.svg";
+
+export const integratedCardContent: IIntegratedCard[] = [
+    {
+        id: 1,
+        description: "Slack is a popular team collaboration and messaging platform designed to facilitate communication and collaboration within organizations, teams, and groups.",
+        install: "100",
+        rate: "4.5",
+        title: "Slack",
+        image: SlackImg.src
+    },
+    {
+        id: 2,
+        description: "Sketch is a popular vector-based design tool created specifically for macOS. It is widely used by graphic and UI/UX designers, product designers,",
+        install: "34",
+        rate: "3.9",
+        title: "Sketch",
+        image: SketchImg.src
+    },
+    {
+        id: 3,
+        description: "Miro is an online collaborative whiteboard platform that empowers teams and individuals to work and collaborate visually.",
+        install: "31",
+        rate: "4.0",
+        title: "Miro",
+        image: MiroImg.src
+    },
+    {
+        id: 4,
+        description: "Figma is a collaborative design tool for creating interactive prototypes and UI designs. It operates in the cloud, enabling real-time teamwork, versatile, and fostering efficient design workflows.",
+        install: "100",
+        rate: "4.5",
+        title: "Figma",
+        image: FigmaImg.src
+    }
+];
+
+import GithubImg from "@assets/product/integrated/Github.svg";
+import TrelloImg from "@assets/product/integrated/Trello.svg";
+import ZapierImg from "@assets/product/integrated/Zapier.svg";
+
+export const integratedCardContentBottom: IIntegratedCard[] = [
+    {
+        id: 1,
+        description: "GitHub is a web-based platform and community for software developers that offers a range of tools and services to facilitate version control.",
+        install: "40",
+        rate: "4.1",
+        title: "Github",
+        image: GithubImg.src
+    },
+    {
+        id: 2,
+        description: "Zapier is an online automation tool that connects your favorite apps, such as Gmail, Slack, Salesforce, and many others.",
+        install: "14",
+        rate: "4.2",
+        title: "Zappier",
+        image: ZapierImg.src
+    },
+    {
+        id: 3,
+        description: "Trello is a popular project management and collaboration tool that uses a visual and card-based approach to help individuals and teams organize.",
+        install: "50",
+        rate: "4.3",
+        title: "Trello",
+        image: TrelloImg.src
+    },
+    {
+        id: 4,
+        description: "Zapier is an online automation tool that connects your favorite apps, such as Gmail, Slack, Salesforce, and many others.",
+        install: "14",
+        rate: "4.2",
+        title: "Zappier",
+        image: ZapierImg.src
+    },
 ];

@@ -12,7 +12,6 @@ interface IProps {
 }
 
 function Header({ active = "", type = "normal" }: IProps) {
-  ;
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 90) {
