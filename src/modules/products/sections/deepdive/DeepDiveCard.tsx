@@ -1,4 +1,7 @@
-import ArrowRightDark from "@assets/icon/arrow-right-dark.svg";
+import ArrowDark from "@assets/product/deepdive/arrowdark.svg";
+import ArrowLight from "@assets/product/deepdive/arrowLight.svg";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { useState } from "react";
 
 interface IProps {
     title: string;
@@ -7,7 +10,13 @@ interface IProps {
     color: string;
 };
 
+function Arrow({ isHover }: { isHover: boolean }) {
+    if (isHover) return <img src={ArrowLight.src} alt="Arrow dark right" width={30} />;
+    return <img src={ArrowDark.src} alt="Arrow dark right" width={30} />;
+}
+
 function DeepDiveCard({ title, description, reader, color }: IProps) {
+    const [isHover, setIsHover] = useState(false);
     let col;
     if (color === "blue") {
         col = "bg-blue-500";
@@ -26,9 +35,9 @@ function DeepDiveCard({ title, description, reader, color }: IProps) {
             </div>
             <h3 className="text-3xl font-semibold">{title}</h3>
             <div className="flex justify-between gap-4">
-                <p className="text-gray-400">{description}</p>
-                <button className="border border-gray-500 px-6 rounded-full hover:bg-gray-300">
-                    <img src={ArrowRightDark.src} alt="Arrow right" />
+                <p className="text-gray-400 w-3/4">{description}</p>
+                <button className="transition-all border w-1/4 border-gray-500 px-6 rounded-full hover:bg-primary hover:border-primary hover:text-white flex justify-center items-center">
+                    <IoIosArrowRoundForward size={40} />
                 </button>
             </div>
         </div>
