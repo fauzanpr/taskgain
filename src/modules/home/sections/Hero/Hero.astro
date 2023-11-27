@@ -1,10 +1,10 @@
 ---
 import Container from "@components/Container";
 import { Image } from "astro:assets";
-import heroImage from "@assets/hero/heroImage.svg";
+import heroImage from "@assets/hero/heroImage.svg"
 ---
 
-<div class="bg-heroBg">
+<div class="bg-heroBg bg-cover">
   <Container>
     <section class="pt-48 flex flex-col gap-36">
       <div class="w-2/3 mx-auto flex flex-col gap-8">
@@ -29,7 +29,7 @@ import heroImage from "@assets/hero/heroImage.svg";
           >
         </div>
       </div>
-      <Image src={heroImage} alt="Image hero" class="" />
+      <Image src={heroImage} alt="Image hero" />
     </section>
   </Container>
 </div>
