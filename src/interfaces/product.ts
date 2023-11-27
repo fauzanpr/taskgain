@@ -1,5 +1,5 @@
 export interface IAccordionItem {
-    id: string | number;
+    id: string;
     title: string;
     description: string;
 };

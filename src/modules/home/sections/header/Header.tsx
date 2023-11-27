@@ -29,8 +29,8 @@ function Header({ active, type = "normal" }: IProps) {
         <div>
           <div className="flex flex-wrap justify-between items-center mx-auto py-4">
             {color ? (type === "blue" ? <a href="/">
-              <img src={LogoBlue.src} alt="Logo taskgain" width={250} />
-            </a> : <a href="/"><img src={Logo.src} alt="Logo taskgain" width={150} /></a>) : (type === "blue" ? <a href="/"><img src={LogoBlue.src} alt="Logo taskgain" width={250} /></a> : <a href="/"><img src={LogoWhite.src} alt="Logo taskgain" width={150} /></a>)}
+              <img src={LogoBlue.src} alt="Logo taskgain" width={150} />
+            </a> : <a href="/"><img src={Logo.src} alt="Logo taskgain" width={150} /></a>) : (type === "blue" ? <a href="/"><img src={LogoBlue.src} alt="Logo taskgain" width={150} /></a> : <a href="/"><img src={LogoWhite.src} alt="Logo taskgain" width={150} /></a>)}
             <div
               id="mega-menu-full"
               className="items-center justify-between font-medium hidden w-full md:flex md:w-auto"
