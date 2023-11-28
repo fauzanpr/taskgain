@@ -33,7 +33,7 @@ function BacklogContent() {
     return (
         <>
             <div className="rounded-xl lg:flex lg:justify-between lg:px-8 lg:py-4 bg-white lg:rounded-full text-gray-500 font-medium">
-                {contentsList.map(content => <p onClick={() => setOpen(content.id)} className={`text-base xl:text-lg hover:bg-primary hover:text-white hover:rounded-full px-8 py-3 cursor-pointer ${content.id === open && "bg-primary rounded-full text-white"}`}>{content.label}</p>)}
+                {contentsList.map(content => <p onClick={() => setOpen(content.id)} className={`text-base xl:text-lg hover:bg-gray-100 hover:rounded-full px-8 py-3 cursor-pointer ${content.id === open && "bg-primary rounded-full text-white hover:bg-primary"}`}>{content.label}</p>)}
             </div>
 
             <div className={`${open === 1 ? "flex flex-col lg:flex-row items-center gap-16" : "hidden"}`}>
