@@ -1,4 +1,3 @@
-import Carousel from "@components/Carousel";
 import type { IValueSection } from "@interfaces/homepage"
 import type { Dispatch, SetStateAction } from "react";
 

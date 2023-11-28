@@ -32,17 +32,17 @@ function BacklogContent() {
     const [open, setOpen] = useState(1);
     return (
         <>
-            <div className="rounded-xl xl:flex xl:justify-between px-8 py-4 bg-white xl:rounded-full text-gray-500 font-medium">
-                {contentsList.map(content => <p onClick={() => setOpen(content.id)} className={`text-lg hover:bg-primary hover:text-white hover:rounded-full px-8 py-3 cursor-pointer ${content.id === open && "bg-primary rounded-full text-white"}`}>{content.label}</p>)}
+            <div className="rounded-xl lg:flex lg:justify-between lg:px-8 lg:py-4 bg-white lg:rounded-full text-gray-500 font-medium">
+                {contentsList.map(content => <p onClick={() => setOpen(content.id)} className={`text-base xl:text-lg hover:bg-primary hover:text-white hover:rounded-full px-8 py-3 cursor-pointer ${content.id === open && "bg-primary rounded-full text-white"}`}>{content.label}</p>)}
             </div>
 
-            <div className={`${open === 1 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 xl:w-1/2">
-                    <h3 className="text-[40px] font-semibold">
+            <div className={`${open === 1 ? "flex flex-col lg:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 lg:w-1/2">
+                    <h3 className="text-2xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-semibold">
                         <span className="text-primary">NEW!</span> Save time by writing user stories with AI
                     </h3>
                     <div>
-                        <ul className="list-disc list-inside text-gray-600 text-lg">
+                        <ul className="list-disc list-inside text-gray-600 text-base md:text-lg">
                             <li>
                                 Learn to write user stories, and acceptance criteria in seconds
                             </li>
@@ -57,14 +57,14 @@ function BacklogContent() {
                     </div>
                     <ButtonArrow text="Learn More" />
                 </div>
-                <img src={UserStories.src} alt="User Stories Image Descritpion" />
+                <img src={UserStories.src} alt="User Stories Image Descritpion" className="lg:w-1/2" />
             </div>
 
-            <div className={`${open === 2 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 xl:w-1/2">
-                    <h3 className="text-[40px] font-semibold">The backlog that everybody understands</h3>
+            <div className={`${open === 2 ? "flex flex-col lg:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 lg:w-1/2">
+                    <h3 className="text-2xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-semibold">The backlog that everybody understands</h3>
                     <div>
-                        <ul className="list-disc list-inside text-gray-500 text-lg">
+                        <ul className="list-disc list-inside text-gray-500 text-base md:text-lg">
                             <li>Create user personas</li>
                             <li>Map the user journey</li>
                             <li>Slice out the MVP</li>
@@ -73,15 +73,14 @@ function BacklogContent() {
                     </div>
                     <ButtonArrow text="Learn more" />
                 </div>
-                {/* <div className="bg-gray-100 w-1/2 h-96 rounded-xl"></div> */}
-                <img src={EmptyImage.src} alt="Empty image content" />
+                <img src={EmptyImage.src} alt="Empty image content" className="lg:w-1/2" />
             </div>
 
-            <div className={`${open === 3 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 xl:w-1/2">
-                    <h3 className="text-[40px] font-semibold">Share a high-level overview of your product</h3>
+            <div className={`${open === 3 ? "flex flex-col lg:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 lg:w-1/2">
+                    <h3 className="text-2xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-semibold">Share a high-level overview of your product</h3>
                     <div>
-                        <ul className="list-disc list-inside text-gray-500 text-lg">
+                        <ul className="list-disc list-inside text-gray-500 text-base md:text-lg">
                             <li>Share the product vision</li>
                             <li>Track progression</li>
                             <li>Portfolio overview</li>
@@ -89,14 +88,14 @@ function BacklogContent() {
                     </div>
                     <ButtonArrow text="Learn more" />
                 </div>
-                <img src={EmptyImage.src} alt="Empty image content" />
+                <img src={EmptyImage.src} alt="Empty image content" className="lg:w-1/2" />
             </div>
 
-            <div className={`${open === 4 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 xl:w-1/2">
-                    <h3 className="text-[40px] font-semibold">Make product decisions with confidence</h3>
+            <div className={`${open === 4 ? "flex flex-col lg:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 lg:w-1/2">
+                    <h3 className="text-2xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-semibold">Make product decisions with confidence</h3>
                     <div>
-                        <ul className="list-disc list-inside text-gray-500 text-lg">
+                        <ul className="list-disc list-inside text-gray-500 text-base md:text-lg">
                             <li>Standardize prioritization</li>
                             <li>Involve your team</li>
                             <li>Visualize product strategy</li>
@@ -104,14 +103,14 @@ function BacklogContent() {
                     </div>
                     <Button text="Learn more" />
                 </div>
-                <img src={PriorImage.src} alt="Priorization image" />
+                <img src={PriorImage.src} alt="Priorization image" className="lg:w-1/2" />
             </div>
 
-            <div className={`${open === 5 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 xl:w-1/2">
-                    <h3 className="text-[40px] font-semibold">A Central Hub for Brilliant Product Ideas</h3>
+            <div className={`${open === 5 ? "flex flex-col lg:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 lg:w-1/2">
+                    <h3 className="text-2xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-semibold">A Central Hub for Brilliant Product Ideas</h3>
                     <div>
-                        <ul className="list-disc list-inside text-gray-500 text-lg">
+                        <ul className="list-disc list-inside text-gray-500 text-base md:text-lg">
                             <li>Streamline user feedback</li>
                             <li>Smart feedback processing</li>
                             <li>Develop feature ideas</li>
@@ -120,7 +119,7 @@ function BacklogContent() {
                     </div>
                     <ButtonArrow text="Learn more" />
                 </div>
-                <img src={EmptyImage.src} alt="Empty image content" />
+                <img src={EmptyImage.src} alt="Empty image content" className="lg:w-1/2" />
             </div>
         </>
     )
