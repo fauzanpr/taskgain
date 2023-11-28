@@ -30,9 +30,9 @@ function ValuesList() {
         return images.find(image => imageActive === image.id);
     };
     return (
-        <div className="flex gap-8 items-center">
+        <div className="flex flex-col xl:flex-row gap-8 items-center">
             { getImageActive()?.element }
-            <div className="w-1/2">
+            <div className="xl:w-1/2">
                 {valueConstant.map((value) => {
                     return <>
                         <ValueCard iconOff={value.iconOff} iconOn={value.iconOn} setImageActive={setImageActive} isActive={value.id === imageActive} title={value.title} description={value.description} id={value.id} key={value.id} />

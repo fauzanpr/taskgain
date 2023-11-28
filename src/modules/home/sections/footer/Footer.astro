@@ -1,12 +1,8 @@
 ---
 import Container from "@components/Container";
-// import Facebook from "@assets/Facebook.svg";
 import Facebook from "@assets/icon/fb-vector.svg";
-// import Instagram from "@assets/Instagram.svg";
 import Instagram from "@assets/icon/ig-vector.svg";
-// import Linkedin from "@assets/LinkedIn.svg";
 import Linkedin from "@assets/icon/linkedin-vector.svg";
-// import Twitter from "@assets/Twitter.svg";
 import Twitter from "@assets/icon/tweet-vector.svg";
 import logoWhite from "@assets/LogoWhite.svg";
 import { Image } from "astro:assets";
@@ -20,14 +16,14 @@ import {
 
 <footer class="bg-[#0F1821]">
   <Container>
-    <div class="flex py-16 gap-8">
-      <div class="w-2/6 flex flex-col gap-4">
+    <div class="grid grid-cols-2 xl:flex py-16 gap-8">
+      <div class="col-span-full xl:w-2/6 flex flex-col gap-4">
         <Image src={logoWhite} alt="Logo Taskgain" width={200} />
         <p class="text-xl text-white font-medium leading-8">
           The #1 way to manage clients, projects and finance
         </p>
       </div>
-      <div class="w-1/6 flex flex-col gap-4">
+      <div class="xl:w-1/6 flex flex-col gap-4">
         <h4 class="font-semibold text-white">Product</h4>
         {
           productFooter.map((product) => (
@@ -37,7 +33,7 @@ import {
           ))
         }
       </div>
-      <div class="w-1/6 flex flex-col gap-4">
+      <div class="xl:w-1/6 flex flex-col gap-4">
         <h4 class="font-semibold text-white">Resources</h4>
         {
           resourcesFooter.map((resources) => (
@@ -47,7 +43,7 @@ import {
           ))
         }
       </div>
-      <div class="w-1/6 flex flex-col gap-4">
+      <div class="xl:w-1/6 flex flex-col gap-4">
         <h4 class="font-semibold text-white">Company Details</h4>
         {
           companyDetailsFooter.map((companyDetails) => (
@@ -57,7 +53,7 @@ import {
           ))
         }
       </div>
-      <div class="w-1/6 flex flex-col gap-4">
+      <div class="xl:w-1/6 flex flex-col gap-4">
         <h4 class="font-semibold text-white">Get in Touch</h4>
         {
           getInTouchFooter.map((getInTouch) => (

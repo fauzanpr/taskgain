@@ -7,7 +7,7 @@ interface IProps {
 
 function Container({ children, bg }: IProps) {
   return (
-    <div className={`max-w-screen-xl xl:w-4/5 mx-auto flex flex-col gap-48 ${bg}`}>{ children }</div>
+    <div className={`max-w-screen-xl px-4 xl:w-4/5 mx-auto flex flex-col gap-48 ${bg}`}>{ children }</div>
   )
 }
 

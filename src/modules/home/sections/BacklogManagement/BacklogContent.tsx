@@ -32,12 +32,12 @@ function BacklogContent() {
     const [open, setOpen] = useState(1);
     return (
         <>
-            <div className="flex justify-between px-8 py-4 bg-white rounded-full text-gray-500 font-medium">
+            <div className="rounded-xl xl:flex xl:justify-between px-8 py-4 bg-white xl:rounded-full text-gray-500 font-medium">
                 {contentsList.map(content => <p onClick={() => setOpen(content.id)} className={`text-lg hover:bg-primary hover:text-white hover:rounded-full px-8 py-3 cursor-pointer ${content.id === open && "bg-primary rounded-full text-white"}`}>{content.label}</p>)}
             </div>
 
-            <div className={`${open === 1 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 w-1/2">
+            <div className={`${open === 1 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 xl:w-1/2">
                     <h3 className="text-[40px] font-semibold">
                         <span className="text-primary">NEW!</span> Save time by writing user stories with AI
                     </h3>
@@ -60,8 +60,8 @@ function BacklogContent() {
                 <img src={UserStories.src} alt="User Stories Image Descritpion" />
             </div>
 
-            <div className={`${open === 2 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 w-1/2">
+            <div className={`${open === 2 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 xl:w-1/2">
                     <h3 className="text-[40px] font-semibold">The backlog that everybody understands</h3>
                     <div>
                         <ul className="list-disc list-inside text-gray-500 text-lg">
@@ -77,8 +77,8 @@ function BacklogContent() {
                 <img src={EmptyImage.src} alt="Empty image content" />
             </div>
 
-            <div className={`${open === 3 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 w-1/2">
+            <div className={`${open === 3 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 xl:w-1/2">
                     <h3 className="text-[40px] font-semibold">Share a high-level overview of your product</h3>
                     <div>
                         <ul className="list-disc list-inside text-gray-500 text-lg">
@@ -92,8 +92,8 @@ function BacklogContent() {
                 <img src={EmptyImage.src} alt="Empty image content" />
             </div>
 
-            <div className={`${open === 4 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 w-1/2">
+            <div className={`${open === 4 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 xl:w-1/2">
                     <h3 className="text-[40px] font-semibold">Make product decisions with confidence</h3>
                     <div>
                         <ul className="list-disc list-inside text-gray-500 text-lg">
@@ -107,8 +107,8 @@ function BacklogContent() {
                 <img src={PriorImage.src} alt="Priorization image" />
             </div>
 
-            <div className={`${open === 5 ? "flex items-center gap-16" : "hidden"}`}>
-                <div className="flex flex-col gap-8 w-1/2">
+            <div className={`${open === 5 ? "flex flex-col xl:flex-row items-center gap-16" : "hidden"}`}>
+                <div className="flex flex-col gap-8 xl:w-1/2">
                     <h3 className="text-[40px] font-semibold">A Central Hub for Brilliant Product Ideas</h3>
                     <div>
                         <ul className="list-disc list-inside text-gray-500 text-lg">
