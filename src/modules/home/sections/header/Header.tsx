@@ -38,19 +38,65 @@ function Header({ active, type = "normal" }: IProps) {
               <ul
                 className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent"
               >
-                {
-                  headerValue.map((headerItem) => (
-                    <li>
-                      <a
-                        href={headerItem.url}
-                        className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover ${headerItem.label === active && "text-blue-700"
-                          } ${color ? "text-gray-900" : (type === "blue" ? "text-gray-900" : "text-white")}`}
-                      >
-                        {headerItem.label}
-                      </a>
-                    </li>
-                  ))
-                }
+                <li>
+                  {active === "product" ? <a
+                    href="/product"
+                    className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover text-primary`}
+                  >
+                    Product
+                  </a> : <a
+                    href="/product"
+                    className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover  ${color ? "text-gray-900" : (type === "blue" ? "text-gray-900" : "text-white")} ${active === "product" && "text-blue-700"
+                      }`}
+                  >
+                    Product
+                  </a>}
+                </li>
+
+                <li>
+                  {active === "resources" ? <a
+                    href="/resources"
+                    className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover text-primary`}
+                  >
+                    Resources
+                  </a> : <a
+                    href="/resources"
+                    className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover  ${color ? "text-gray-900" : (type === "blue" ? "text-gray-900" : "text-white")} ${active === "resources" && "text-blue-700"
+                      }`}
+                  >
+                    Resources
+                  </a>}
+                </li>
+
+                <li>
+                  {active === "enterprise" ? <a
+                    href="/enterprise"
+                    className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover text-primary`}
+                  >
+                    Enterprise
+                  </a> : <a
+                    href="/enterprise"
+                    className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover  ${color ? "text-gray-900" : (type === "blue" ? "text-gray-900" : "text-white")} ${active === "enterprise" && "text-blue-700"
+                      }`}
+                  >
+                    Enterprise
+                  </a>}
+                </li>
+
+                <li>
+                  {active === "pricing" ? <a
+                    href="/pricing"
+                    className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover text-primary`}
+                  >
+                    Pricing
+                  </a> : <a
+                    href="/pricing"
+                    className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover  ${color ? "text-gray-900" : (type === "blue" ? "text-gray-900" : "text-white")} ${active === "pricing" && "text-blue-700"
+                      }`}
+                  >
+                    Pricing
+                  </a>}
+                </li>
               </ul>
             </div>
             <div className="flex items-center gap-6">
