@@ -13,13 +13,13 @@ function Carousel({ imagePosition = "right", data }: IProps) {
         return (
             <div id="controls-carousel" className="relative w-full" data-carousel="static">
                 {/* <!-- Carousel wrapper --> */}
-                <div className="relative h-fit overflow-hidden rounded-lg md:h-[55vh]">
+                <div className="relative overflow-hidden rounded-lg h-[40vh] md:h-[55vh]">
                     {data.map(d => <div className="hidden duration-700 ease-in-out" data-carousel-item>
                         <CarouselItem stars={d.stars} author={d.author} position={d.position} review={d.review} imagePosition={imagePosition} />
                     </div>)}
                 </div>
                 {/* <!-- Slider controls --> */}
-                <div className="flex absolute left-1/3 bottom-32 z-30">
+                <div className="flex absolute left-1/3 md:bottom-20 xl:bottom-28 z-30">
                     <button type="button" className="z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
                         <span className="transition-all inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-300  group-hover:bg-primary group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
                             <img src={ArrowLeft.src} alt="Arrow Left" />

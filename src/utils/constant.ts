@@ -292,14 +292,14 @@ export const homepageReviewContent: IReview[] = [
         stars: 4,
         author: "Wouter H.",
         position: "Chapter Lead",
-        review: "I often have meetings where we bring together a large group of offline and online stakeholders. StoriesOnBoard has helped me structure this meeting while we are brainstorming on product design and the E2E process. The result is easily improved during follow-up meetings or exported to an Excel or pdf and shared within the organization.",
+        review: "I often have meetings where we bring together a large group of offline and online stakeholders. Taskgain has helped me structure this meeting while we are brainstorming. The result is easily improved during follow-up meetings or exported to an Excel or pdf.",
     },
     {
         id: 2,
         stars: 5,
         author: "Fauzan P.",
         position: "Manusia Biasa",
-        review: "Conducting extensive meetings involving a diverse set of offline and online stakeholders used to be a logistical challenge until we discovered StoriesOnBoard. This tool has been instrumental in streamlining our sessions focused on product design and end-to-end processes. Its structured approach has significantly enhanced our brainstorming sessions, allowing for easy improvement during subsequent meetings. Moreover, the ability to export the outcomes seamlessly to Excel or PDF has remarkably facilitated sharing and collaboration within our organization"
+        review: "Conducting extensive meetings involving a diverse set of offline and online stakeholders used to be a logistical challenge until we discovered StoriesOnBoard. This tool has been instrumental in streamlining our sessions focused on product design and end-to-end processes. "
     }
 ];
 

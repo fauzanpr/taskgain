@@ -29,7 +29,7 @@ function CarouselItem({ review, author, position, stars, imagePosition = "right"
     } else if (imagePosition === "right") {
         return (
             <div className="flex gap-8 justify-between">
-                <div className="w-1/2 flex flex-col justify-between">
+                <div className="w-full md:w-1/2 flex flex-col justify-between">
                     <div className="flex flex-col gap-4">
                         <Star counter={stars} />
                         <p className="text-lg italic">“{review}”</p>
@@ -39,7 +39,7 @@ function CarouselItem({ review, author, position, stars, imagePosition = "right"
                         <p className="text-gray-400 font-light text-sm">{position}</p>
                     </div>
                 </div>
-                <div className="h-96">
+                <div className="hidden md:block h-96">
                     <img src={Review1.src} alt="Gambar Ilustrasi Review 1" />
                 </div>
             </div>
