@@ -9,10 +9,10 @@ import { Image } from "astro:assets";
 <section>
   <Container>
     <div class="flex flex-col lg:flex-row gap-16 pt-48 justify-between items-start">
-      <Image src={BenefitsImg} alt="Benefit Image" />
-      <div class="lg:w-1/2 flex flex-col gap-8">
-        <h2 class="text-4xl text-center lg:text-5xl font-medium lg:leading-[57.4px] lg:text-start">
-          7 benefits of user <br /> story maps
+      <Image src={BenefitsImg} alt="Benefit Image" class="lg:w-1/2" />
+      <div class="w-full lg:w-1/2 flex flex-col gap-8">
+        <h2 class="text-3xl text-center lg:text-5xl font-semibold lg:leading-[57.4px] lg:text-start">
+          7 benefits of user story maps
         </h2>
         <BenefitsList client:load />
       </div>
