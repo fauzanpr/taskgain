@@ -10,8 +10,8 @@ import { Image } from "astro:assets";
 
 <section>
   <Container>
-    <div class="flex gap-16 justify-between items-center py-48">
-      <div class="flex flex-col gap-8 h-fit w-1/2">
+    <div class="flex flex-col lg:flex-row gap-16 justify-between items-center py-48">
+      <div class="flex flex-col gap-8 h-fit lg:w-1/2">
         <div class="flex flex-col gap-4">
           <h2 class="text-5xl font-semibold">Free story mapping ebook</h2>
           <p class="text-lg font-normal text-gray-400">
@@ -19,7 +19,7 @@ import { Image } from "astro:assets";
             Agile Project Excellence
           </p>
         </div>
-        <div class="flex justify-between">
+        <div class="flex flex-col gap-8 lg:flex-row justify-between">
           <div class="flex flex-col gap-4">
             <p class="text-lg text-gray-500">50 handpicked hints on</p>
             {
@@ -39,7 +39,7 @@ import { Image } from "astro:assets";
         </div>
         <Button text="Download" />
       </div>
-      <Image src={EbookImg} alt="Ebook Image" />
+      <Image src={EbookImg} alt="Ebook Image" class="lg:w-1/2" />
     </div>
   </Container>
 </section>
