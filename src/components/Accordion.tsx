@@ -19,7 +19,7 @@ function Accordion({ id, title, description, open, setOpen, type, mode = "normal
                     if (open === id) setOpen(-1);
                     else setOpen(id);
                 }}>
-                    <p className={`text-xl font-semibold ${open === id && mode === "blue" && "text-primary"}`}>{title}</p>
+                    <p className={`text-lg lg:text-xl font-semibold ${open === id && mode === "blue" && "text-primary"}`}>{title}</p>
                     {mode === "normal" && (open === id ? <img src={ArrowUp.src} alt="panah ke atas" /> : <img src={ArrowDown.src} alt="panah ke bawah" />)}
                     {mode === "blue" && (open === id ? <img src={ArrowUpBlue.src} alt="panah ke atas" /> : <img src={ArrowDown.src} alt="panah ke bawah" />)}
                 </div>
