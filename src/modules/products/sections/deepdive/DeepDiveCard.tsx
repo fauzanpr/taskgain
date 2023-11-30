@@ -27,6 +27,7 @@ function DeepDiveCard({ title, description, reader, color }: IProps) {
     } else if (color === "red") {
         col = "bg-red-500";
     }
+    
     return (
         <div className="flex flex-col gap-6 p-8 shadow-md">
             <div className="flex justify-between items-center">
@@ -34,7 +35,7 @@ function DeepDiveCard({ title, description, reader, color }: IProps) {
                 <p className="text-gray-500 font-light">{reader}</p>
             </div>
             <h3 className="text-3xl font-semibold">{title}</h3>
-            <div className="flex justify-between gap-4">
+            <div className="flex items-start justify-between gap-4">
                 <p className="text-gray-400 w-3/4">{description}</p>
                 <button className="transition-all border w-1/4 border-gray-500 px-6 rounded-full hover:bg-primary hover:border-primary hover:text-white flex justify-center items-center">
                     <IoIosArrowRoundForward size={40} />

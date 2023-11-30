@@ -22,12 +22,12 @@ function BenefitItem({ id, title, description, open, setOpen }: IProps) {
             <div className="flex justify-between items-center">
                 <div className="flex gap-4 items-center">
                     <p className="text-2xl text-gray-400 font-medium">{id}</p>
-                    <p className="text-2xl">{title}</p>
+                    <p className="text-xl lg:text-2xl">{title}</p>
                 </div>
                 {open === id ? <img src={ArrowUp.src} alt="Arrow up" /> : <img src={ArrowDown.src} alt="Arrow down" />}
             </div>
             <div className={`${open === id ? "flex" : "hidden"} gap-4`}>
-                <p className="text-2xl text-white font-medium cursor-default">01</p>
+                <p className="text-2xl text-transparent font-medium cursor-default">01</p>
                 <p className="text-gray-500 font-light">{description}</p>
             </div>
         </div>
