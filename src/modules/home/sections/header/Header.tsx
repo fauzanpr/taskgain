@@ -75,12 +75,12 @@ function Header({ active, type = "normal" }: IProps) {
 
                 <li>
                   {active === "enterprise" ? <a
-                    href="/enterprise"
+                    href="/enterprice"
                     className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover text-primary`}
                   >
                     Enterprise
                   </a> : <a
-                    href="/enterprise"
+                    href="/enterprice"
                     className={`block py-2 pl-3 pr-4 rounded hover:text-primaryHover  ${color ? "text-gray-900" : (type === "blue" ? "text-gray-900" : "text-white")} ${active === "enterprise" && "text-blue-700"
                       }`}
                   >

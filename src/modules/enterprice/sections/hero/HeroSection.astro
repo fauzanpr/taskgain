@@ -1,0 +1,26 @@
+---
+import Container from "@components/Container";
+import EntericeHeroImg from "@assets/enterprice/enterpriceHeroImg.svg";
+
+import { Image } from "astro:assets";
+---
+
+<section class="bg-productHeroBg bg-cover">
+  <Container>
+    <div class="pt-48 flex flex-col gap-10">
+      <div class="flex flex-col gap-10 w-3/4 mx-auto">
+        <h1 class="text-[80px] leading-[85px] font-semibold text-center">
+          Collaborative solution for <span class="text-blue-400"
+            >large teams</span
+          >
+        </h1>
+        <p class="text-[#606060] text-center text-lg">
+          Lead the charge in propelling product development efforts, while
+          concurrently optimizing operational scalability to ensure sustainable
+          growth and increased efficiency.
+        </p>
+      </div>
+      <Image src={EntericeHeroImg} alt="Enterprice image" />
+    </div>
+  </Container>
+</section>

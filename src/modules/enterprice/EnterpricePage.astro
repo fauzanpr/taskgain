@@ -1,7 +1,7 @@
 ---
-import Header from "@modules/home/sections/header/Header.astro";
+import Header from "@modules/home/sections/header/Header";
 import Container from "@components/Container";
-import HeroSection from "@components/HeroSection";
+import HeroSection from "@modules/enterprice/sections/hero/HeroSection.astro";
 import Trusted from "@modules/home/sections/Trusted.astro";
 import Identify from "@modules/enterprice/sections/identify/Identify.astro";
 import Review from "@modules/enterprice/sections/review/Review.astro";
@@ -10,11 +10,9 @@ import EnterpriceCta from "@modules/enterprice/sections/enterpricecta/Enterprice
 import Footer from "@modules/home/sections/footer/Footer.astro";
 ---
 
-<Header />
-<HeroSection title="Collaborative solution for large teams" description="Lead the charge in propelling product development efforts, while concurrently optimizing operational scalability to ensure sustainable growth and increased efficiency." type="full" />
-<div class="mb-48" />
+<Header active="enterprise" type="blue" client:only />
+<HeroSection />
 <Container>
-    <Trusted />
     <Identify />
     <Review />
     <Transparency />

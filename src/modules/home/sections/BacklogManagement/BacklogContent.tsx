@@ -4,6 +4,8 @@ import UserStories from "@assets/homepage/backlog/userstories.svg";
 import Button from "@components/Button";
 import EmptyImage from "@assets/homepage/backlog/empty.svg";
 import PriorImage from "@assets/homepage/backlog/prior.svg";
+import StoryMapImage from "@assets/homepage/backlog/storymap.svg";
+import RoadmapImage from "@assets/homepage/backlog/roadmap.svg";
 
 const contentsList = [
     {
@@ -73,7 +75,7 @@ function BacklogContent() {
                     </div>
                     <ButtonArrow text="Learn more" />
                 </div>
-                <img src={EmptyImage.src} alt="Empty image content" className="lg:w-1/2" />
+                <img src={StoryMapImage.src} alt="Empty image content" className="lg:w-1/2" />
             </div>
 
             <div className={`${open === 3 ? "flex flex-col lg:flex-row items-center gap-16" : "hidden"}`}>
@@ -88,7 +90,7 @@ function BacklogContent() {
                     </div>
                     <ButtonArrow text="Learn more" />
                 </div>
-                <img src={EmptyImage.src} alt="Empty image content" className="lg:w-1/2" />
+                <img src={RoadmapImage.src} alt="Empty image content" className="lg:w-1/2" />
             </div>
 
             <div className={`${open === 4 ? "flex flex-col lg:flex-row items-center gap-16" : "hidden"}`}>
