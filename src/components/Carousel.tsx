@@ -15,7 +15,7 @@ function Carousel({ imagePosition = "right", data }: IProps) {
                 {/* <!-- Carousel wrapper --> */}
                 <div className="relative overflow-hidden rounded-lg h-[40vh] md:h-[55vh]">
                     {data.map(d => <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <CarouselItem stars={d.stars} author={d.author} position={d.position} review={d.review} imagePosition={imagePosition} />
+                        <CarouselItem stars={d.stars} author={d.author} position={d.position} review={d.review} imagePosition={imagePosition} image={d.photo} />
                     </div>)}
                 </div>
                 {/* <!-- Slider controls --> */}

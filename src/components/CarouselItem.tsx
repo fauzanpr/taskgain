@@ -6,10 +6,11 @@ interface IProps {
     author: string;
     position: string;
     stars: number;
+    image: string;
     imagePosition?: "right" | "left";
 }
 
-function CarouselItem({ review, author, position, stars, imagePosition = "right" }: IProps) {
+function CarouselItem({ review, author, position, stars, image, imagePosition = "right" }: IProps) {
     if (imagePosition === "left") {
         return (
             <div className="flex gap-8">
@@ -40,7 +41,7 @@ function CarouselItem({ review, author, position, stars, imagePosition = "right"
                     </div>
                 </div>
                 <div className="hidden md:block h-96">
-                    <img src={Review1.src} alt="Gambar Ilustrasi Review 1" />
+                    <img src={image} alt="Gambar Ilustrasi Review 1" />
                 </div>
             </div>
         )

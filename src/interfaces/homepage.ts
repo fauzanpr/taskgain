@@ -31,4 +31,5 @@ export interface IReview {
     author: string;
     position: string;
     review: string;
+    photo: string;
 }
