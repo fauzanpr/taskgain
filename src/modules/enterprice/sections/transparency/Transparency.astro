@@ -11,8 +11,8 @@ import { Image } from "astro:assets";
 <section class="py-32">
   <Container>
     <div class="flex flex-col gap-8">
-      <div class="flex gap-8 items-center">
-        <div class="flex flex-col gap-8 w-1/2 mx-auto">
+      <div class="flex flex-col lg:flex-row gap-8 items-center">
+        <div class="flex flex-col gap-8 lg:w-1/2 mx-auto">
           <h2 class="text-5xl font-semibold leading-[56px]">
             Transparency and structure for the entire organization
           </h2>
@@ -27,7 +27,7 @@ import { Image } from "astro:assets";
         </div>
         <Image src={TransparentSection} alt="Transparent Section Image" />
       </div>
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {
           transparencyContent.map((content) => {
             return (

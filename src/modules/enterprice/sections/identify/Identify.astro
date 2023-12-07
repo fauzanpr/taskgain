@@ -16,10 +16,10 @@ import { seamlessCollaboration, permiumServices } from "@utils/constant";
         title="Identify, manage, & validate product ideas"
         description="Define the project scope with confidence and meet stakeholders' needs. Save time and get on the same page with a user-focused approach and a visual backlog."
       />
-      <div class="flex gap-8 items-center">
+      <div class="flex flex-col lg:flex-row gap-8 items-center">
         <Image src={SeamlessImg} alt="Seamless Image" />
-        <div class="flex flex-col gap-4 w-1/2">
-          <h2 class="text-[40px] font-semibold">Seamless collaboration</h2>
+        <div class="flex flex-col gap-4 lg:w-1/2">
+          <h2 class="text-3xl lg:text-[40px] font-semibold">Seamless collaboration</h2>
           {
             seamlessCollaboration.map((content) => (
               <ListCheckCircle description={content} />
@@ -27,9 +27,9 @@ import { seamlessCollaboration, permiumServices } from "@utils/constant";
           }
         </div>
       </div>
-      <div class="flex gap-8 items-center">
-        <div class="flex flex-col gap-4 w-1/2">
-          <h2 class="text-[40px] font-semibold">Visualize progress with chart</h2>
+      <div class="flex flex-col lg:flex-row gap-8 items-center">
+        <div class="flex flex-col gap-4 lg:w-1/2 order-2 lg:order-1">
+          <h2 class="text-3xl lg:text-[40px] font-semibold">Visualize progress with chart</h2>
           {
             permiumServices.map((content) => (
               <ListCheckCircle description={content} />
