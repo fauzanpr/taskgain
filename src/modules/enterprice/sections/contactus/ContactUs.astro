@@ -1,0 +1,47 @@
+---
+import Container from "@components/Container";
+import ContactUsDescription from "./ContactUsDescription.astro";
+import FormField from "./FormField.astro";
+import Button from "@components/Button";
+---
+
+<section class="bg-enterpriceFormBg bg-cover">
+  <Container>
+    <div class="flex gap-16 py-24">
+      <ContactUsDescription />
+      <div class="w-1/2">
+        <form class="flex flex-col gap-8">
+          <FormField label="Full Name" placeholder="Your Name" />
+          <FormField label="Email" placeholder="you@email.com" />
+          <FormField label="Company Name" placeholder="Your company name" />
+          <div class="">
+            <label
+              for="companysize"
+              class="block text-[#606060] mb-2 font-medium"
+              >Company Size <span class="text-red-600">*</span></label
+            >
+            <select
+              name="companysize"
+              id="companysize"
+              class="block w-full p-3 border border-[#D6D6D6] rounded-lg text-[#9BA3AF]"
+            >
+              <option value="less100">Less than 100 employees</option>
+              <option value="more100">More than 100 employees</option>
+            </select>
+          </div>
+          <div class="flex gap-2">
+            <input type="checkbox" />
+            <p class="text-[#878787]">
+              I agree to <span class="text-[#606060]">Privacy Policy</span> and <span
+                class="text-[#606060]">Terms of Use</span>
+            </p>
+          </div>
+          <button
+            class="transition-all flex gap-4 items-center justify-center bg-primary hover:bg-primaryHover text-white px-8 py-3 rounded-full text-center text-lg"
+            >Get Started</button
+          >
+        </form>
+      </div>
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,67 @@
+---
+import Facebook from "@assets/enterprice/fb-darker.svg";
+import Instagram from "@assets/enterprice/ig-darker.svg";
+import Linkedin from "@assets/enterprice/linkedin-darker.svg";
+import Twitter from "@assets/enterprice/tweet-darker.svg";
+
+import LocationIcon from "@assets/enterprice/locationIcon.svg";
+import AlarmIcon from "@assets/enterprice/alarmIcon.svg";
+
+import { Image } from "astro:assets";
+---
+
+<div class="w-1/2 flex flex-col justify-between">
+    <div class="flex flex-col gap-6">
+      <h2 class="text-5xl font-semibold">Contact us</h2>
+      <p class="text-[#606060] text-lg">
+        Explore StoriesOnBoard with a guided tour and discuss how it would
+        fit into your processes
+      </p>
+      <div class="flex gap-2">
+        <a
+          href="#"
+          class="transition-all bg-white rounded-full flex justify-center items-center hover:bg-gray-100 h-10 w-10"
+        >
+          <Image src={Facebook} alt="Facebook logo" />
+        </a>
+        <a
+          href="#"
+          class="bg-white h-10 w-10 rounded-full flex justify-center items-center hover:bg-gray-100 transition-all"
+        >
+          <Image src={Twitter} alt="Twitter Logo" />
+        </a>
+        <a
+          href="#"
+          class="bg-white h-10 w-10 rounded-full flex justify-center items-center hover:bg-gray-100 transition-all"
+        >
+          <Image src={Instagram} alt="Instagram logo" />
+        </a>
+        <a
+          href="#"
+          class="bg-white h-10 w-10 rounded-full flex justify-center items-center hover:bg-gray-100 transition-all"
+        >
+          <Image src={Linkedin} alt="Linkedin logo" />
+        </a>
+      </div>
+    </div>
+    <div class="flex gap-16 justify-between">
+      <div class="w-1/2">
+        <div class="flex items-center gap-2 mb-2">
+          <Image src={LocationIcon} alt="Location Icon" />
+          <p class="font-medium text-sm">Address</p>
+        </div>
+        <p class="text-[#606060] font-light text-sm">
+          1881 Devmads UK, German, Laomi 5665, USA
+        </p>
+      </div>
+      <div class="w-1/2">
+        <div class="flex items-center gap-2 mb-2">
+          <Image src={AlarmIcon} alt="Alarm Icon" />
+          <p class="font-medium text-sm">Visit Us</p>
+        </div>
+        <p class="text-[#606060] font-light text-sm">
+            Monday → Friday <br> 8AM to 5PM
+        </p>
+      </div>
+    </div>
+  </div>

@@ -1,5 +1,4 @@
 import Star from "./Star";
-import Review1 from "@assets/homepage/reviews/review-1.svg";
 
 interface IProps {
     review: string;
