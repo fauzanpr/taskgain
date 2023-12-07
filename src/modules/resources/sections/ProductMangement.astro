@@ -1,0 +1,29 @@
+---
+import HeroSection from "@components/Homepage/HeroSection.astro";
+import DeepDiveCard from "@modules/products/sections/deepdive/DeepDiveCard";
+import { prodctManagementContent } from "@utils/constant";
+import Container from "@components/Container";
+---
+
+<section class="flex flex-col gap-8 bg-[#FAFAFA]">
+  <Container>
+    <div class="flex flex-col gap-8 py-32">
+      <HeroSection
+        title="Product management guides & resources"
+        description="Learn more: free resources, templates, real-life examples, and guides that will help you keep your PM skills sharp and up to date."
+      />
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        {
+          prodctManagementContent.map((item) => (
+            <DeepDiveCard
+              title={item.title}
+              description={item.description}
+              reader={item.reader}
+              color={item.color}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </Container>
+</section>

@@ -172,6 +172,7 @@ export const benefitValues: IAccordionItem[] = [
     },
 ];
 
+// dev
 export const deepDiveItem: IBenefitItem[] = [
     {
         id: 1,
@@ -404,4 +405,50 @@ export const enterpriceReviewContent: IReview[] = [
         review: "Conducting extensive meetings involving a diverse set of offline and online stakeholders used to be a logistical challenge until we discovered StoriesOnBoard. This tool has been instrumental in streamlining our sessions focused on product design and end-to-end processes.",
         photo: EnterpriceReviewImg.src
     }
+];
+
+// resources > ProductMangement
+export const prodctManagementContent: IBenefitItem[] = [
+    {
+        id: 1,
+        title: "How to write great userstories",
+        description: "A comprehensive guide on how to write user stories, and save time.",
+        reader: "5 min read",
+        color: "blue"
+    },
+    {
+        id: 2,
+        title: "User story mapping basics",
+        description: "Learn the basics of user story mapping with our short intro.",
+        reader: "6 min read",
+        color: "green"
+    },
+    {
+        id: 3,
+        title: "The Acceptance criteria",
+        description: "Real-life acceptance criteria examples and good practices",
+        reader: "6 min read",
+        color: "orange"
+    },
+    {
+        id: 4,
+        title: "Feedback management",
+        description: "Learn the basics of feedback management",
+        reader: "5 min read",
+        color: "red"
+    },
+    {
+        id: 5,
+        title: "Story mapping for JIRA",
+        description: "Learn how to create powerful story maps for your JIRA projects.",
+        reader: "5 min read",
+        color: "blue"
+    },
+    {
+        id: 6,
+        title: "StoriesOnBoard Help Center",
+        description: "Guides and answers from the StoriesOnBoard Team.",
+        reader: "5 min read",
+        color: "green"
+    },
 ];

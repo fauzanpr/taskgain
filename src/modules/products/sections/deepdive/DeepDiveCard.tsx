@@ -26,6 +26,8 @@ function DeepDiveCard({ title, description, reader, color }: IProps) {
         col = "bg-yellow-500";
     } else if (color === "red") {
         col = "bg-red-500";
+    } else if (color === "orange") {
+        col = "bg-orange-400"
     }
     
     return (
