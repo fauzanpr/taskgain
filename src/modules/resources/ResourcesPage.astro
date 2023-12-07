@@ -1,0 +1,9 @@
+---
+import Header from "@modules/home/sections/header/Header";
+import Hero from "./sections/Hero.astro";
+import Trusted from "@modules/home/sections/Trusted.astro";
+---
+
+<Header active="resources" client:only />
+<Hero />
+<Trusted isGrey={true} />

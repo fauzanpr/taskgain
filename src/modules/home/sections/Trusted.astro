@@ -6,20 +6,46 @@ import Walgreens from "@assets/WalgreensWhite.svg";
 import Yodel from "@assets/YodelWhite.svg";
 import Container from "@components/Container";
 
+import IntercomGrey from "@assets/Intercom.svg";
+import LutfhansaGrey from "@assets/Lufthansa.svg";
+import MondayGrey from "@assets/monday.svg";
+import WalgreensGrey from "@assets/Walgreens.svg";
+import YodelGrey from "@assets/Yodel.svg";
+
 import { Image } from "astro:assets";
+const { isGrey } = Astro.props;
 ---
 
-<div class="bg-[#0f1821] py-12">
-  <Container>
-    <div>
-      <h2 class="text-center text-2xl text-white mb-8">Trusted by</h2>
-      <div class="grid justify-items-center gap-4 grid-cols-2 md:grid-cols-3 lg:flex lg:justify-between">
-        <Image src={Lutfhansa} alt="Logo Perusahaan Intercom" width={150} />
-        <Image src={Walgreens} alt="Logo Perusahaan Intercom" width={150} />
-        <Image src={Monday} alt="Logo Perusahaan Intercom" width={150} />
-        <Image src={Yodel} alt="Logo Perusahaan Intercom" width={150} />
-        <Image src={Intercom} alt="Logo Perusahaan Intercom" width={150} />
-      </div>
+{
+  isGrey ? (
+    <div class="bg-white py-12">
+      <Container>
+        <div>
+          <h2 class="text-center text-2xl text-[#878787] mb-8">Trusted by</h2>
+          <div class="grid justify-items-center gap-4 grid-cols-2 md:grid-cols-3 lg:flex lg:justify-between">
+            <Image src={LutfhansaGrey} alt="Logo Perusahaan Intercom" width={150} />
+            <Image src={WalgreensGrey} alt="Logo Perusahaan Intercom" width={150} />
+            <Image src={MondayGrey} alt="Logo Perusahaan Intercom" width={150} />
+            <Image src={YodelGrey} alt="Logo Perusahaan Intercom" width={150} />
+            <Image src={IntercomGrey} alt="Logo Perusahaan Intercom" width={150} />
+          </div>
+        </div>
+      </Container>
     </div>
-  </Container>
-</div>
+  ) : (
+    <div class="bg-[#0f1821] py-12">
+      <Container>
+        <div>
+          <h2 class="text-center text-2xl text-white mb-8">Trusted by</h2>
+          <div class="grid justify-items-center gap-4 grid-cols-2 md:grid-cols-3 lg:flex lg:justify-between">
+            <Image src={Lutfhansa} alt="Logo Perusahaan Intercom" width={150} />
+            <Image src={Walgreens} alt="Logo Perusahaan Intercom" width={150} />
+            <Image src={Monday} alt="Logo Perusahaan Intercom" width={150} />
+            <Image src={Yodel} alt="Logo Perusahaan Intercom" width={150} />
+            <Image src={Intercom} alt="Logo Perusahaan Intercom" width={150} />
+          </div>
+        </div>
+      </Container>
+    </div>
+  )
+}
