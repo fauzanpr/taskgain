@@ -1,0 +1,17 @@
+---
+import Header from "@modules/home/sections/header/Header";
+import Hero from "./sections/Hero.astro";
+import Trusted from "@modules/home/sections/Trusted.astro";
+import PricingPlan from "./sections/PricingPlan.astro";
+import StoryMapping from "@modules/resources/sections/StoryMapping.astro";
+import StoryMappingCta from "@modules/home/sections/cta/Cta.astro"
+import Footer from "@modules/home/sections/footer/Footer.astro";
+---
+
+<Header active="pricing" client:only />
+<Hero />
+<Trusted isGrey={true} />
+<PricingPlan />
+<StoryMapping padding={true} />
+<StoryMappingCta />
+<Footer />
