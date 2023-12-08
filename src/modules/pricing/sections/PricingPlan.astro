@@ -23,11 +23,11 @@ import { Image } from "astro:assets";
           >Annual Plan</button
         >
       </div>
-      <div class="flex gap-8">
+      <div class="flex flex-col lg:flex-row gap-8">
         <PricingCard />
 
         <div
-          class="flex flex-col gap-8 border p-8 rounded-3xl w-1/3 bg-[#2798FF] text-white"
+          class="flex flex-col gap-8 border p-8 rounded-3xl lg:w-1/3 bg-[#2798FF] text-white"
         >
           <div class="flex flex-col gap-4">
             <Image src={Professional} alt="Free plan" />
@@ -58,7 +58,7 @@ import { Image } from "astro:assets";
           </div>
         </div>
 
-        <div class="flex flex-col gap-8 border p-8 rounded-3xl w-1/3">
+        <div class="flex flex-col gap-8 border p-8 rounded-3xl lg:w-1/3">
           <div class="flex flex-col gap-4">
             <Image src={Companies} alt="Free plan" />
             <h3 class="text-2xl font-medium">Companies</h3>
