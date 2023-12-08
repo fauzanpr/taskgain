@@ -2,7 +2,6 @@ import ButtonArrow from "@components/ButtonArrow";
 import { useState } from "react";
 import UserStories from "@assets/homepage/backlog/userstories.svg";
 import Button from "@components/Button";
-import EmptyImage from "@assets/homepage/backlog/empty.svg";
 import PriorImage from "@assets/homepage/backlog/prior.svg";
 import StoryMapImage from "@assets/homepage/backlog/storymap.svg";
 import RoadmapImage from "@assets/homepage/backlog/roadmap.svg";
@@ -121,7 +120,7 @@ function BacklogContent() {
                     </div>
                     <ButtonArrow text="Learn more" />
                 </div>
-                <img src={EmptyImage.src} alt="Empty image content" className="lg:w-1/2" />
+                <img src={StoryMapImage.src} alt="Empty image content" className="lg:w-1/2" />
             </div>
         </>
     )
