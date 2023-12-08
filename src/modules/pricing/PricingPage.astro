@@ -6,13 +6,11 @@ import PricingPlan from "./sections/PricingPlan.astro";
 import StoryMapping from "@modules/resources/sections/StoryMapping.astro";
 import StoryMappingCta from "@modules/home/sections/cta/Cta.astro";
 import Footer from "@modules/home/sections/footer/Footer.astro";
+import HeroRP from "@components/HeroRP.astro";
 ---
 
-<Header active="pricing" client:only />
-<Hero />
-<div class="pt-20">
-  <Trusted isGrey={true} />
-</div>
+<Header type="blue" active="pricing" client:only />
+<HeroRP title="Get started with a 14-day free trial" desc="Get started with a 14-day free trial and explore the full spectrum of possibilities, risk-free. Dive into our offerings, experience the benefits firsthand, and witness the value we bring to your journey." />
 <PricingPlan />
 <StoryMapping padding={true} />
 <StoryMappingCta />

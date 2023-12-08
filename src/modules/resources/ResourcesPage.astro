@@ -6,11 +6,11 @@ import ProductMangement from "./sections/ProductMangement.astro";
 import StoryMapping from "./sections/StoryMapping.astro";
 import StoryMappingCta from "@modules/home/sections/cta/Cta.astro";
 import Footer from "@modules/home/sections/footer/Footer.astro";
+import HeroRP from "@components/HeroRP.astro";
 ---
 
-<Header active="resources" client:only />
-<Hero />
-<Trusted isGrey={true} />
+<Header active="resources" type="blue" client:only />
+<HeroRP title="Product management knowledge base" desc="Dive into our comprehensive product management knowledge base for expert insights, proven strategies, and invaluable resources to drive success and innovation" />
 <ProductMangement />
 <StoryMapping />
 <StoryMappingCta />
