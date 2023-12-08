@@ -1,9 +1,92 @@
 ---
+import Button from "@components/Button";
 import Container from "@components/Container";
+import HeroSection from "@components/Homepage/HeroSection.astro";
+import PricingCard from "./PricingCard.astro";
+import Professional from "@assets/pricing/professional.svg";
+import Companies from "@assets/pricing/companies.svg"
+import PriceFeatureList from "./PriceFeatureList.astro";
+import Freeplan from "@assets/pricing/freeplan.svg";
+import { Image } from "astro:assets";
 ---
 
-<section class="bg-blue-500 py-48">
-    <Container>
-        <p>This is Pricing</p>
-    </Container>
+<section class="py-32">
+  <Container>
+    <div class="flex flex-col gap-16">
+      <HeroSection
+        title="Affordable pricing plans"
+        description="Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque ut quis."
+      />
+      <div class="flex gap-4 justify-center">
+        <Button text="Monthly Plan" />
+        <button
+          class={`hidden lg:inline transition-all border px-6 py-2 hover:bg-primary hover:border-primary hover:text-white rounded-full border-gray-400 text-black text-sm`}
+          >Annual Plan</button
+        >
+      </div>
+      <div class="flex gap-8">
+        <PricingCard />
+
+        <div
+          class="flex flex-col gap-8 border p-8 rounded-3xl w-1/3 bg-[#2798FF] text-white"
+        >
+          <div class="flex flex-col gap-4">
+            <Image src={Professional} alt="Free plan" />
+            <h3 class="text-2xl font-medium">Free Plan</h3>
+            <p class="text-base border-b pb-2 font-medium">
+              You can explore basic Incenta features for free if you're just
+              getting started.
+            </p>
+          </div>
+          <p class="text-[64px] font-semibold">
+            $40<span class="text-base font-medium">/USD</span>
+          </p>
+          <div class="flex flex-col gap-6">
+            {
+              [
+                "200 workflow task",
+                "1000+ app integrations",
+                "Unlimited multi-step calls",
+                "Single user",
+              ].map((item) => (
+                <PriceFeatureList isWhite={true} description={item} />
+              ))
+            }
+            <button
+              class="transition-all flex gap-4 justify-center items-center bg-white hover:bg-gray-100 text-primary text-base px-8 py-3 w-full rounded-full"
+              >Try this plan</button
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-8 border p-8 rounded-3xl w-1/3">
+          <div class="flex flex-col gap-4">
+            <Image src={Companies} alt="Free plan" />
+            <h3 class="text-2xl font-medium">Companies</h3>
+            <p class="text-base text-[#878787] border-b pb-2 font-medium">
+              Need to automate across your teams? Check out our enterprise
+              plans.
+            </p>
+          </div>
+          <p class="text-[64px] font-semibold">
+            $799<span class="text-base font-medium text-[#878787]">/USD</span>
+          </p>
+          <div class="flex flex-col gap-6">
+            {
+              [
+                "unlimited  workflowtask",
+                "1000+ app integrations",
+                "500  multi-step calls",
+                "Unlimited team member",
+              ].map((item) => <PriceFeatureList description={item} />)
+            }
+            <button
+              class="transition-all flex gap-4 justify-center items-center bg-primary hover:bg-primaryHover text-white text-base px-8 py-3 w-full rounded-full"
+              >Try this plan</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
 </section>

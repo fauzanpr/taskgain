@@ -1,0 +1,20 @@
+---
+import CheckCircle from "@assets/icon/check-circle.svg";
+import CheckCircleWhite from "@assets/pricing/circle.svg"
+import { Image } from "astro:assets";
+const { description, isWhite } = Astro.props;
+---
+
+{
+  isWhite ? (
+    <div class="flex gap-2">
+      <Image src={CheckCircleWhite} alt="Check Circle" />
+      <p class="text-white font-medium text-base">{description}</p>
+    </div>
+  ) : (
+    <div class="flex gap-2">
+      <Image src={CheckCircle} alt="Check Circle" />
+      <p class="text-[#878787] font-medium text-base">{description}</p>
+    </div>
+  )
+}
